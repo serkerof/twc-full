@@ -21,8 +21,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entiti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TWC_BACK_END", "TWC_BACK_END\TWC_BACK_END.csproj", "{FEAB9695-34A3-438E-A4F3-431C3F5C6F24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{30D12654-19D1-4EAC-A7BD-92887F7BA623}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,10 +53,6 @@ Global
 		{FEAB9695-34A3-438E-A4F3-431C3F5C6F24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEAB9695-34A3-438E-A4F3-431C3F5C6F24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEAB9695-34A3-438E-A4F3-431C3F5C6F24}.Release|Any CPU.Build.0 = Release|Any CPU
-		{30D12654-19D1-4EAC-A7BD-92887F7BA623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{30D12654-19D1-4EAC-A7BD-92887F7BA623}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{30D12654-19D1-4EAC-A7BD-92887F7BA623}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{30D12654-19D1-4EAC-A7BD-92887F7BA623}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -38,6 +38,8 @@ namespace Business.DependencyResolvers.Autofac
 
             builder.RegisterType<CommenterManager>().As<ICommenterService>();
             builder.RegisterType<EfCommenterDal>().As<ICommenterDal>();
+
+
         }
     }
 }
