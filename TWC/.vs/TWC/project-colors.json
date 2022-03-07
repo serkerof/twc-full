@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a49fa841-5aef-4a25-ab25-521c95ab171c": {
+      "ProjectGuid": "a49fa841-5aef-4a25-ab25-521c95ab171c",
+      "DisplayName": "TWC",
+      "ColorIndex": 0
+    },
+    "c83e2f9a-bae0-47e9-b3ed-79e2d430399b": {
+      "ProjectGuid": "c83e2f9a-bae0-47e9-b3ed-79e2d430399b",
+      "DisplayName": "TWC_BACK",
+      "ColorIndex": 1
+    },
+    "e9a3c857-8993-47f5-bb55-2eac012eb38f": {
+      "ProjectGuid": "e9a3c857-8993-47f5-bb55-2eac012eb38f",
+      "DisplayName": "Core",
+      "ColorIndex": 2
+    },
+    "c5d398e4-381a-444c-bc84-22ec8dd16858": {
+      "ProjectGuid": "c5d398e4-381a-444c-bc84-22ec8dd16858",
+      "DisplayName": "Business",
+      "ColorIndex": 3
+    },
+    "dc9c7464-1be0-4b23-b73b-64d4c34c3698": {
+      "ProjectGuid": "dc9c7464-1be0-4b23-b73b-64d4c34c3698",
+      "DisplayName": "DataAccess",
+      "ColorIndex": 4
+    },
+    "29b108d3-afb1-4de9-a3e9-e71bad8b4f4e": {
+      "ProjectGuid": "29b108d3-afb1-4de9-a3e9-e71bad8b4f4e",
+      "DisplayName": "Entities",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}

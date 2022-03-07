@@ -1,0 +1,29 @@
+{
+    "sqltools.connections": [
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true,
+                "abortTransactionOnError": true,
+                "instanceName": "DESKTOP-K4GQOET\\SQLEXPRESS02"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 1433,
+            "driver": "MSSQL",
+            "name": "Base Connection",
+            "database": "TWC",
+            "user": "Admin",
+            "password": "",
+            "provider": "mssql",
+            "group": "Default",
+            "providerName": "Microsoft SQL Server",
+            "providerDisplayName": "Microsoft SQL Server",
+            "providerType": "MSSQL",
+            "providerDisplayType": "Microsoft SQL Server",
+            "providerTypeDisplayName": "Microsoft SQL Server",
+            "username": "Admin"
+        }
+    ]
+}

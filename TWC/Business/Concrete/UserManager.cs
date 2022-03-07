@@ -1,0 +1,77 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Business.Abstract;
+using Business.Constants;
+using Core.Utilities.Results;
+using DataAccess.Abstract;
+using Entities.Concrete;
+using NuGet.Protocol.Plugins;
+
+namespace Business.Concrete
+{
+    public class UserManager:IUserService
+    {
+        private IUserDal _userDal;
+
+        public UserManager(IUserDal userDal)
+        {
+            _userDal = userDal;
+        }
+
+        public IResult Add(User user)
+        {
+            _userDal.Add(user);
+            return new SuccessResult(Messages.Success + user.Name);
+        }
+
+        public IResult Delete(User user)
+        {
+            _userDal.Delete(user);
+            return new SuccessResult(Messages.Deleted + user.Name);
+        }
+
+        public IResult Update(User user)
+        {
+            _userDal.Update(user);
+            return new SuccessResult(Messages.Updated + user.Name);
+        }
+
+        public IDataResult<User> Get(int id)
+        {
+            return new SuccessDataResult<User>(_userDal.Get(filter: x => x.ID == id));
+
+        }
+
+        public IDataResult<List<User>> GetList()
+        {
+            return new SuccessDataResult<List<User>>(_userDal.GetList());
+        }
+
+
+
+        public IResult CheckPassword(User user, string password)
+        {
+            if (user.Password != Int32.Parse(password))
+            {
+                return new ErrorResult(Messages.NotValidPassword);
+            }
+           
+            return new SuccessResult();
+        }
+
+        public List<OperationClaim> GetClaims(User user)
+        {
+           
+            return _userDal.GetClaims(user);
+        }
+
+        public User GetByMail(string email)
+        {
+            return _userDal.Get(filter: x => List<Email>().Any(y => y.EmailAddress == email));
+        }
+    }
+
+}
