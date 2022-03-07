@@ -52,7 +52,7 @@ const About = () => {
             <img className={`${styles.topic_image}`} src={topicImage1} alt="" />
           </div>
           <div className={`${styles.paragraph_section} d-flex direction-column justify-center`}>
-            <span className={`${styles.sub_header}`}>LOREM IPSUM</span>
+            <span className={`${styles.sub_header}`}>Haqqımızda</span>
             <p className={`${styles.topic_desc}`}>
               TWC cəmiyyətin və bizneslərin <br /> ən əhəmiyyətli problemlərini həll etmək üçün kreativliyin <br />{' '}
               sərhədlərinin olmadığı yerdir
@@ -62,7 +62,7 @@ const About = () => {
 
         <section className={`${styles.topic_section} d-flex`}>
           <div className={`${styles.paragraph_section} d-flex direction-column justify-center`}>
-            <span className={`${styles.sub_header}`}>LOREM IPSUM</span>
+            <span className={`${styles.sub_header}`}>Haqqımızda</span>
             <p className={`${styles.topic_desc}`}>
               Biz 2018-ci ildə qurulan Azərbaycanın ilk yerli menecment konsaltinq şirkətiyik.
             </p>
@@ -77,7 +77,7 @@ const About = () => {
             <img className={`${styles.topic_image}`} src={topicImage3} alt="" />
           </div>
           <div className={`${styles.paragraph_section} d-flex direction-column justify-center`}>
-            <span className={`${styles.sub_header}`}>LOREM IPSUM</span>
+            <span className={`${styles.sub_header}`}>Haqqımızda</span>
             <p className={`${styles.topic_desc}`}>
               Bugün biz ən böyük oyunçulara <br /> sənayeni müəyyən edən <br /> problemləri həll etməkdə və <br />{' '}
               davamlı biznes dəyəri <br /> yaratmaqda kömək edirik.
@@ -87,7 +87,7 @@ const About = () => {
 
         <section className={`${styles.topic_section} d-flex`}>
           <div className={`${styles.paragraph_section} d-flex direction-column justify-center`}>
-            <span className={`${styles.sub_header}`}>LOREM IPSUM</span>
+            <span className={`${styles.sub_header}`}>Haqqımızda</span>
             <p className={`${styles.topic_desc}`}>
               Komandamız özünə məhdudiyyət tanımayan və müştərilərə dəstək üçün özündə qlobal təcrübə və <br /> lokal
               anlayışı birləşdirənlərdən ibarətdir.
@@ -100,7 +100,7 @@ const About = () => {
       </div>
 
       <section className={`${styles.extra_services_section} d-flex direction-column align-center`}>
-        <span className={`${styles.sub_header}`}>lorem ipsum</span>
+        <span className={`${styles.sub_header}`}>Haqqımızda</span>
         <span className={`${styles.service_details_title}`}>Dəyərlərimiz</span>
         <div className={`${styles.circle_options} d-flex justify-between`}>
           <div className={`${styles.circle} ${styles.activ_circle}`}></div>

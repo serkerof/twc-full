@@ -16,6 +16,7 @@ import coverImgPng from './assets/img/alcohol-cover.png';
 import graphImg1 from './assets/img/alcohol-graph-1.png';
 import graphImg2 from './assets/img/alcohol-graph-2.png';
 import whiteArrow from '../../toolbox/buttons/svg/arrow-white.svg';
+import SearchForm from './SearchForm';
 
 const ArticlesAlcohol = () => {
   const navigate = useNavigate();
@@ -218,10 +219,7 @@ const ArticlesAlcohol = () => {
                 <p className={`${styles.aside_latest_articles_desc}`}>Söhbət şirkətlərin özlərini maliyyə...</p>
               </div>
             </div>
-            <div className={`${styles.aside_search}`}>
-              <input className={`${styles.aside_search_input}`} placeholder={`Axtar`} type="text" />
-              <AiOutlineSearch className={`${styles.aside_search_input_icon}`} />
-            </div>
+            <SearchForm />
           </div>
         </section>
       </section>

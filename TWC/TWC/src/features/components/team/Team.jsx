@@ -58,7 +58,7 @@ const Team = () => {
         <p className={`${styles.team_member_education}`}>{member.education}</p>
       </div>
       <div className={`${styles.team_member_img_container} d-flex direction-column align-center justify-center`}>
-        <img className={`${styles.team_member_img}`} src={member.img} alt="image not available" />
+        <img className={`${styles.team_member_img}`} src={member.img} alt=" not available" />
       </div>
     </div>
   ));
@@ -66,7 +66,7 @@ const Team = () => {
   const thumbMembers = allMembers.map((member) => (
     <div key={member.id} className={`${styles.team_member_thumb_section} d-flex direction-column align-center`}>
       <div className={`${styles.team_member_thumb_img_container}`}>
-        <img src={member.img} alt="image not available" className={`${styles.team_member_thumb_img}`} />
+        <img src={member.img} alt=" not available" className={`${styles.team_member_thumb_img}`} />
       </div>
       <div className={`${styles.team_member_thumb_about} d-flex direction-column align-center`}>
         <h2 className={`${styles.team_member_thumb_name}`}>{member.name}</h2>
@@ -95,7 +95,6 @@ const Team = () => {
           items={members}
           autoPlayInterval={2400}
           animationDuration={2400}
-          mouseTracking={!thumbAnimation}
           onSlideChange={syncMainBeforeChange}
           onSlideChanged={syncMainAfterChange}
           touchTracking={!thumbAnimation}
@@ -111,7 +110,6 @@ const Team = () => {
             onSlideChanged={syncThumbs}
             touchTracking={!mainAnimation}
             autoWidth
-            mouseTracking
           />
         </div>
       </div>

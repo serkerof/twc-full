@@ -15,6 +15,8 @@ import relatedArticleImgPng from './assets/img/ntflx.png';
 import coverImgPng from './assets/img/cargo-cover.png';
 import sectionImgPng from './assets/img/cargo-section.png';
 import whiteArrow from '../../toolbox/buttons/svg/arrow-white.svg';
+import SearchForm from './SearchForm';
+import CommentForm from './CommentForm';
 
 const ArticlesStartup = () => {
   const navigate = useNavigate();
@@ -102,23 +104,7 @@ const ArticlesStartup = () => {
           <section className={`${styles.comment_section}`}>
             <p className={`${styles.comment_amount}`}>0 Rəy</p>
             <p className={`${styles.comment_form_title}`}>Məqaləyə ilk rəy bildirən siz olun</p>
-            <section className={`${styles.comment_group_form}`}>
-              <textarea placeholder="Rəy*" className={`${styles.input_for_comment}`} />
-              <div className={`${styles.personal_info_input}`}>
-                <input type="text" placeholder="Ad və Soyad*" className={`${styles.input_for_name}`} />
-                <input type="text" placeholder="Email*" className={`${styles.input_for_email}`} />
-              </div>
-              <div className={`${styles.input_checbox_section} d-flex align-center`}>
-                <input className={`${styles.input_checbox} `} type="checkbox" />
-                <p className={`${styles.input_checbox_label} `}>
-                  Növbəti dəfə şərh yazmaq üçün adımı və e-poçtumu bu brauzerdə yadda saxlayın.
-                </p>
-              </div>
-              <button className={`${styles.form_submit_button}`}>
-                Paylaş
-                <img src={whiteArrow} alt="" />
-              </button>
-            </section>
+            <CommentForm />
           </section>
         </section>
         <section className={`${styles.aside_container}`}>
@@ -167,10 +153,7 @@ const ArticlesStartup = () => {
                 <p className={`${styles.aside_latest_articles_desc}`}>Söhbət şirkətlərin özlərini maliyyə...</p>
               </div>
             </div>
-            <div className={`${styles.aside_search}`}>
-              <input className={`${styles.aside_search_input}`} placeholder={`Axtar`} type="text" />
-              <AiOutlineSearch className={`${styles.aside_search_input_icon}`} />
-            </div>
+            <SearchForm/>
           </div>
         </section>
       </section>

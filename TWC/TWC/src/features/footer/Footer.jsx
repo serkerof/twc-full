@@ -8,11 +8,15 @@ import RoundedButton from '../toolbox/buttons/RoundedButton'
 
 const Footer = () => {
   const allFooterData = useSelector(selectAllFooterLinks)
-  const [email,setEmail] = React.useState() ; 
-  const [error,setError] = React.useState();
+  const [email, setEmail] = React.useState();
+  const [error, setError] = React.useState();
 
   const handleNavigateFooter = (paramsLink) => {
 
+  }
+
+  const sendEmail = () => {
+    // TODO => save email
   }
 
   const renderedMenu = allFooterData.map((item) => {
@@ -52,8 +56,8 @@ const Footer = () => {
             Uğura gedən <br />
             yolda TWC ilə
           </h2>
-            <div className='mb-self-end'>
-             <RoundedButton positioned="40px" />
+          <div className='mb-self-end'>
+            <RoundedButton positioned="40px" onClick={() => { sendEmail() }} />
           </div>
           <input
             type="email"
@@ -64,16 +68,13 @@ const Footer = () => {
             className={`absolute ${styles.footer_input}`}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-
-
           />
-      
         </div>
 
         <div
           className={`d-flex justify-between ${styles.margin_top_content} ${styles.width_footer_links}`}
         >
-        {renderedMenu}
+          {renderedMenu}
         </div>
       </div>
       <p className={styles.footer_end}>&copy; 2021 Think Wise Consulting MMC</p>
