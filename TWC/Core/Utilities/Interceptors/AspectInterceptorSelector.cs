@@ -1,18 +1,26 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿
+using Castle.DynamicProxy;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using System.Text;
 
-namespace Core.Utilities.IoC
+namespace Core.Utilities.Interceptors
 {
-    public static class ServiceTool
-    {
-        public static IServiceProvider ServiceProvider { get; private set; }
 
-        public static IServiceCollection Create(IServiceCollection services)
+    public class AspectInterceptorSelector : IInterceptorSelector
+    {
+        public IInterceptor[] SelectInterceptors(Type type, MethodInfo method, IInterceptor[] interceptors)
         {
-            ServiceProvider = services.BuildServiceProvider();
-            return services;
+            var classAttributes = type.GetCustomAttributes<MethodInterceptionBaseAttribute>
+                (true).ToList();
+            var methodAttributes = type.GetMethod(method.Name)
+                .GetCustomAttributes<MethodInterceptionBaseAttribute>(true);
+            classAttributes.AddRange(methodAttributes);
+
+            return classAttributes.OrderBy(x => x.Priority).ToArray();
         }
     }
+
 }

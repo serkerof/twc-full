@@ -32,6 +32,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\Users\\info\\Desktop\\deps\\TWC\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\info\\Desktop\\deps\\TWC\\Core\\Core.csproj"
+              },
               "C:\\Users\\info\\Desktop\\deps\\TWC\\DataAccess\\DataAccess.csproj": {
                 "projectPath": "C:\\Users\\info\\Desktop\\deps\\TWC\\DataAccess\\DataAccess.csproj"
               },
@@ -58,6 +61,14 @@
             "Azure.Core": {
               "target": "Package",
               "version": "[1.22.0, )"
+            },
+            "Castle.Core": {
+              "target": "Package",
+              "version": "[4.4.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.3.6, )"
             },
             "NuGet.Protocol": {
               "target": "Package",
@@ -123,9 +134,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Castle.Core": {
+              "target": "Package",
+              "version": "[4.4.1, )"
+            },
             "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.Azure.DocumentDB.Core": {
+              "target": "Package",
+              "version": "[2.17.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -140,6 +159,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "NuGet.Protocol": {
+              "target": "Package",
+              "version": "[6.1.0, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",

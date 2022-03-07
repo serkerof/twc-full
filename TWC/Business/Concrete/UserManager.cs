@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Linq.Expressions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,8 +20,9 @@ namespace Business.Concrete
         public UserManager(IUserDal userDal)
         {
             _userDal = userDal;
-        }
 
+        }
+      
         public IResult Add(User user)
         {
             _userDal.Add(user);
@@ -64,13 +66,15 @@ namespace Business.Concrete
 
         public List<OperationClaim> GetClaims(User user)
         {
-           
-            return _userDal.GetClaims(user);
+
+            throw new NotImplementedException();
         }
 
         public User GetByMail(string email)
         {
-            return _userDal.Get(filter: x => List<Email>().Any(y => y.EmailAddress == email));
+
+            throw new NotImplementedException();
+        
         }
     }
 
