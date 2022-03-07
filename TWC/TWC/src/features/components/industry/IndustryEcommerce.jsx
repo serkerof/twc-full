@@ -5,7 +5,6 @@ import Footer from './../../footer/Footer';
 import styles from './industry.module.css';
 // !----------------------------------------------------------
 import headerImagePng from './assets/img/eticaret-header.png';
-import sectionImagePng from './assets/img/eticaret-section.png';
 
 const IndustryEcommerce = () => {
   return (
