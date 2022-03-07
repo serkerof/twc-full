@@ -81,7 +81,7 @@ const SignUp = () => {
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,20}$"
             />
             <label className={`${styles.password_requirement_text}`} htmlFor="password">
               Minimum 8 simvoldan ibarət olmalıdır
