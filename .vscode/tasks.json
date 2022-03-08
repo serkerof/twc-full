@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/TWC/TWC_BACK/TWC_BACK.csproj",
+                "${workspaceFolder}/TWC/TWC_BACK_END/TWC_BACK_END.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/TWC/TWC_BACK/TWC_BACK.csproj",
+                "${workspaceFolder}/TWC/TWC_BACK_END/TWC_BACK_END.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/TWC/TWC_BACK/TWC_BACK.csproj"
+                "${workspaceFolder}/TWC/TWC_BACK_END/TWC_BACK_END.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

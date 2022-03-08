@@ -23,3 +23,4 @@ namespace Core.Utilities.Results
         }
     }
 }
+
