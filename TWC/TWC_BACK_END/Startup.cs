@@ -28,7 +28,7 @@ using Core.Utilities.Security.JWT;
 using DataAccess.Abstract;
 using DataAccess.Concrete;
 
-namespace WebAPI
+namespace TWC_BACK_END
 {
     public class Startup
     {
@@ -47,8 +47,7 @@ namespace WebAPI
             //AOP
             //Postsharp
             services.AddControllers();
-            //services.AddSingleton<IProductService,ProductManager>();
-            //services.AddSingleton<IProductDal, EfProductDal>();
+        
 
             services.AddCors();
 
