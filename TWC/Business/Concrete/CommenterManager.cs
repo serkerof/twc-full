@@ -8,6 +8,7 @@ using Business.Constants;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using NuGet.Protocol.Plugins;
 
 namespace Business.Concrete
 {
@@ -50,6 +51,16 @@ namespace Business.Concrete
         public IDataResult<List<Commenter>> GetList()
         {
             return new SuccessDataResult<List<Commenter>>(_commenterDal.GetList());
+        }
+
+        public List<OperationClaim> GetClaims(Commenter commenter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Commenter GetByMail(string email)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -3,12 +3,18 @@
  *   All rights reserved.
  */
 
-import { createSlice, createEntityAdapter } from '@reduxjs/toolkit' ; 
+import { createSlice, createEntityAdapter, createAsyncThunk } from '@reduxjs/toolkit' ; 
 import { navigationData } from './navigationData'
 
 const navigationAdapter = createEntityAdapter({
     selectId:(item) => item.id,
     sortComparer:(preItem,nextItem) => preItem.id.localeCompare(nextItem.id)
+})
+
+
+export const fetchNavigation = createAsyncThunk('navigation/fetchNavigation', async () => {
+    let request = await fetch('/api/navigation');
+    return await request.json();
 })
 
 

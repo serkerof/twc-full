@@ -1,0 +1,6 @@
+C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\obj\Debug\net6.0\TWC_BACK_END.csproj.AssemblyReference.cache
+C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\obj\Debug\net6.0\TWC_BACK_END.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\obj\Debug\net6.0\TWC_BACK_END.AssemblyInfoInputs.cache
+C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\obj\Debug\net6.0\TWC_BACK_END.AssemblyInfo.cs
+C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\obj\Debug\net6.0\TWC_BACK_END.csproj.CoreCompileInputs.cache
+C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\obj\Debug\net6.0\TWC_BACK_END.MvcApplicationPartsAssemblyInfo.cache

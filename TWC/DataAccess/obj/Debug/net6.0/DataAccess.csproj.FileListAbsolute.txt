@@ -15,3 +15,5 @@ C:\Users\info\Desktop\deps\TWC\DataAccess\obj\Debug\net6.0\DataAccess.dll
 C:\Users\info\Desktop\deps\TWC\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
 C:\Users\info\Desktop\deps\TWC\DataAccess\obj\Debug\net6.0\DataAccess.pdb
 C:\Users\info\Desktop\deps\TWC\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+C:\Users\info\Desktop\deps\TWC\DataAccess\bin\Debug\net6.0\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\Users\info\Desktop\deps\TWC\DataAccess\bin\Debug\net6.0\Cosmos.CRTCompat.dll

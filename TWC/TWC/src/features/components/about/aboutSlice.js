@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { createEntityAdapter, createSlice } from "@reduxjs/toolkit";
+import { createEntityAdapter, createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import team_mem1 from './../home/assets/img/team-aynur.png';
 import team_mem2 from './../home/assets/img/team-chingiz.png';
 import team_mem3 from './../home/assets/img/team-ramazan.png';
@@ -15,6 +15,8 @@ const aboutAdapter = createEntityAdapter({
     selectId:(teamMember) => teamMember.id,
     sortComparer:(preMember,nextMember) => preMember.id.localeComparer(nextMember.id)
 })
+
+
 
 const initialState = {
     error:null,
@@ -70,12 +72,50 @@ const initialState = {
 }
 
 
+export const fetchMembers = createAsyncThunk('about/fetchMembers', async () => {
+
+    let request = await fetch('/api/employeesgetall');
+    return await request.json();
+
+})
+
+
+export const addMember = createAsyncThunk('about/addMember', async (member) => {
+    let request = await fetch('/api/employeesadd',{
+        method:'POST',
+        headers:{
+            'Content-Type':'application/json'
+        },
+        body:JSON.stringify(member)
+    });
+    return await request.json();
+})
+
 const sliceInvoker = () => {
     return {
         name:'about',
         initialState,
         reducers:{},
-        extraReducers:{}
+        extraReducers:{
+            [fetchMembers.fulfilled]:(state,action) => {
+                state.members = aboutAdapter.upsertMany(state.members,action.payload)
+            },
+            [fetchMembers.rejected]:(state,action) => {
+                state.error = action.payload.error.message     
+            },
+            [fetchMembers.pending]:(state,action) => {
+                state.status = 'pending'
+            },
+            [addMember.fulfilled]:(state,action) => {
+                state.members = aboutAdapter.addOne(state.members,action.payload)
+            },
+            [addMember.rejected]:(state,action) => {
+                state.error = action.payload.error.message     
+            },
+            [addMember.pending]:(state,action) => {
+                state.status = 'pending'
+            }
+        }
     }
 }
 

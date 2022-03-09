@@ -8,6 +8,7 @@ using Business.Constants;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using NuGet.Protocol.Plugins;
 
 namespace Business.Concrete
 {
@@ -47,6 +48,14 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Customer>>(_customerDal.GetList());
         }
 
+        public List<OperationClaim> GetClaims(Customer customer)
+        {
+            throw new NotImplementedException();
+        }
 
+        public Customer GetByMail(string email)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

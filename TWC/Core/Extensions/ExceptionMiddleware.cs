@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
-using FluentValidation;
-using FluentValidation.Results;
+﻿using System.Net;
+using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Http;
 
 namespace Core.Extensions
@@ -36,7 +31,7 @@ namespace Core.Extensions
             httpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 
             string message = "Internal Server Error";
-            IEnumerable<ValidationFailure> errors;
+            IEnumerable<Microsoft.IdentityModel.Tokens.ValidationFailure> errors;
             if (e.GetType() == typeof(ValidationException))
             {
                 message = e.Message;

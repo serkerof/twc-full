@@ -1,22 +1,34 @@
 // @ts-nocheck
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { selectAllFooterLinks } from './footerSlice'
 import styles from './footer.module.css'
 import RoundedButton from '../toolbox/buttons/RoundedButton'
 
 const Footer = () => {
-  const allFooterData = useSelector(selectAllFooterLinks)
+
+  const allFooterData = useSelector(selectAllFooterLinks);
+
+
   const [email, setEmail] = React.useState();
   const [error, setError] = React.useState();
+
+  const dispatch = useDispatch() ; 
 
   const handleNavigateFooter = (paramsLink) => {
 
   }
 
+  
+
   const sendEmail = () => {
-    // TODO => save email
+    if(!email) {
+      setError('Email is required');
+      setTimeout(() => setError(''),2000)
+    } else {
+
+    }
   }
 
   const renderedMenu = allFooterData.map((item) => {
@@ -63,7 +75,7 @@ const Footer = () => {
             type="email"
             name="email"
             id="email"
-            placeholder="Email"
+            placeholder={error && error.length > 0 ? error : 'Email'}
             pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
             className={`absolute ${styles.footer_input}`}
             value={email}

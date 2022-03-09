@@ -1,8 +1,3 @@
-
-using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace Core.Utilities.Results
 {
     public class DataResult<T> : Result, IDataResult<T>
@@ -17,5 +12,6 @@ namespace Core.Utilities.Results
             Data = data;
         }
         public T Data { get; }
+
     }
 }
