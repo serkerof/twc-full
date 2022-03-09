@@ -5,13 +5,12 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import styles from './team.module.css';
 
-const thumbItems = (members, [setThumbIndex, setThumbAnimation]) => {
+const thumbItems = (members, handleThumbClick) => {
   return members.map((item, i) => (
     <div
       className="thumb"
       onClick={() => {
-        setThumbIndex(i);
-        setThumbAnimation(true);
+        handleThumbClick(i)
       }}
     >
       {item}
@@ -21,40 +20,36 @@ const thumbItems = (members, [setThumbIndex, setThumbAnimation]) => {
 
 const Team = () => {
   const allMembers = useSelector(selectAllMembers);
+  const defaultIntervalTime = 2400;
   const [mainIndex, setMainIndex] = useState(0);
   const [mainAnimation, setMainAnimation] = useState(false);
   const [thumbIndex, setThumbIndex] = useState(0);
   const [thumbAnimation, setThumbAnimation] = useState(false);
-
+  const [autoPlayInterval, setAutoPlayInterval] = useState(defaultIntervalTime);
   const syncMainBeforeChange = (e) => {
-    setMainAnimation(true);
-  };
-
-  const syncMainAfterChange = (e) => {
-    setMainAnimation(false);
-
-    if (e.type === 'action') {
-      setThumbIndex(e.item);
-      setThumbAnimation(false);
+    setAutoPlayInterval(defaultIntervalTime)
+    if (e.item === allMembers.length - 1) {
+      setThumbIndex(0);
+      setThumbAnimation(true);
+      setMainIndex(0);
     } else {
-      setMainIndex(thumbIndex);
+      setMainIndex(e.item + 1);
+      setThumbIndex(e.item + 1);
     }
   };
 
-  const syncThumbs = (e) => {
-    setThumbIndex(e.item);
-    setThumbAnimation(false);
-
-    if (!mainAnimation) {
-      setMainIndex(e.item);
-    }
-  };
+  const handleThumbClick = (itemIndex) => {
+    setThumbIndex(itemIndex);
+    setThumbAnimation(true);
+    setMainIndex(itemIndex);
+    setAutoPlayInterval(5000);
+  }
 
   const members = allMembers.map((member) => (
     <div key={member.id} className={`${styles.team_member_section} d-flex justify-around `}>
-      <div className={`${styles.team_member_about} d-flex direction-column align-center justify-center`}>
+      <div className={`${styles.team_member_about} `}>
         <h2 className={`${styles.team_member_name}`}>{member.name}</h2>
-        <p className={`${styles.team_member_job_title}`}>{member.position}</p>
+        <h3 className={`${styles.team_member_job_title}`}>{member.position}</h3>
         <p className={`${styles.team_member_education}`}>{member.education}</p>
       </div>
       <div className={`${styles.team_member_img_container} d-flex direction-column align-center justify-center`}>
@@ -68,13 +63,13 @@ const Team = () => {
       <div className={`${styles.team_member_thumb_img_container}`}>
         <img src={member.img} alt=" not available" className={`${styles.team_member_thumb_img}`} />
       </div>
-      <div className={`${styles.team_member_thumb_about} d-flex direction-column align-center`}>
+      <div className={`${styles.team_member_thumb_about} `}>
         <h2 className={`${styles.team_member_thumb_name}`}>{member.name}</h2>
         <p className={`${styles.team_member_thumb_job_title}`}>{member.position}</p>
       </div>
     </div>
   ));
-  const [thumbs] = useState(thumbItems(thumbMembers, [setThumbIndex, setThumbAnimation]));
+  const [thumbs] = useState(thumbItems(thumbMembers, handleThumbClick));
   return (
     <div>
       <div class={`${styles.our_team_top}`}>
@@ -93,10 +88,9 @@ const Team = () => {
           infinite={true}
           autoPlayStrategy={'none'}
           items={members}
-          autoPlayInterval={2400}
+          autoPlayInterval={autoPlayInterval}
           animationDuration={2400}
           onSlideChange={syncMainBeforeChange}
-          onSlideChanged={syncMainAfterChange}
           touchTracking={!thumbAnimation}
         />
         <div className={`${styles.thumbs_container} thumbs`}>
@@ -104,10 +98,10 @@ const Team = () => {
           <AliceCarousel
             activeIndex={thumbIndex}
             disableDotsControls
+            animationDuration={2400}
             disableButtonsControls
             items={thumbs}
             mouseTracking={false}
-            onSlideChanged={syncThumbs}
             touchTracking={!mainAnimation}
             autoWidth
           />
