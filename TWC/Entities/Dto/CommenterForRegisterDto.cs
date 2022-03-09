@@ -5,8 +5,10 @@ namespace Entities.Dto
 {
     public class CommenterForRegisterDto : IDto
     {
-        public int EmailID { get; set; }
-        public string? Password { get; set; }
-        public List<Email>? Emails { get; set; }
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public Email Email { get; set; }
+
     }
 }
