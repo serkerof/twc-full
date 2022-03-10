@@ -1,13 +1,18 @@
 ﻿using Azure.Core;
 using Business.Abstract;
-using Core.Utilities.Results;
 using Entities.Concrete;
 using Entities.Dto;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Core.Utilities.Results;
+
+
+
 
 namespace Business.Concrete
 {

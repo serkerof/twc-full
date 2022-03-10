@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Business.Abstract;
 using Business.Constants;
-using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using NuGet.Protocol.Plugins;
+using Business.Concrete;
 
 namespace Business.Concrete
 {
@@ -43,7 +43,7 @@ namespace Business.Concrete
 
         public IDataResult<Admin> Get(int id)
         {
-            return new SuccessDataResult<Admin>(_adminDal.Get(filter: x => x.ID == id)) ;
+            return new SuccessDataResult<Admin>(_adminDal.Get(filter: x => x.ID == id));
 
         }
 

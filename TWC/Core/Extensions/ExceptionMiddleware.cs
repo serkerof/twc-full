@@ -1,6 +1,6 @@
-﻿using System.Net;
+﻿using Microsoft.AspNetCore.Http;
 using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Http;
+using System.Net;
 
 namespace Core.Extensions
 {

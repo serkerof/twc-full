@@ -6,16 +6,17 @@ using Microsoft.IdentityModel.Tokens;
 using NuGet.Protocol.Plugins;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using Microsoft.Extensions.Configuration;
 
 
 namespace Core.Utilities.Security.JWT
 {
     public class JwtHelper : ITokenHelper
     {
-        public IConfiguration Configuration { get; }
+        public Microsoft.Extensions.Configuration.IConfiguration Configuration { get; }
         private TokenOptions _tokenOptions;
         private DateTime _accessTokenExpiration;
-        public JwtHelper(IConfiguration configuration)
+        public JwtHelper(Microsoft.Extensions.Configuration.IConfiguration configuration)
         {
             Configuration = configuration;
             _tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
@@ -25,7 +26,7 @@ namespace Core.Utilities.Security.JWT
         public AccessToken CreateToken(User user, List<OperationClaim> operationClaims)
         {
             _accessTokenExpiration = DateTime.Now.AddMinutes(_tokenOptions.AccessTokenExpiration);
-            var securityKey = SecurityKeyHelper.CreateSecurityKey(_tokenOptions.SecurityKey);
+            var securityKey = SecurityKeyHelper.CreateSecurityKey(_tokenOptions.SecurityKey ?? "12345678901234567890123456789012");
             var signingCredentials = SigningCredentialsHelper.CreateSigningCredentials(securityKey);
             var jwt = CreateJwtSecurityToken(_tokenOptions, user, signingCredentials, operationClaims);
             var jwtSecurityTokenHandler = new JwtSecurityTokenHandler();
@@ -57,7 +58,7 @@ namespace Core.Utilities.Security.JWT
         {
             var claims = new List<Claim>();
             claims.AddNameIdentifier(user.Id.ToString());
-            claims.AddEmail(user.EmailID);
+            claims.AddEmail(user.Email);
             claims.AddName($"{user.Name} {user.Surname}");
             claims.AddRoles(operationClaims.Select(c => c.Name).ToArray());
 

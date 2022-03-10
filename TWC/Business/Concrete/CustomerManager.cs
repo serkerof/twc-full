@@ -12,7 +12,7 @@ using NuGet.Protocol.Plugins;
 
 namespace Business.Concrete
 {
-    public class CustomerManager:ICustomerService
+    public class CustomerManager : ICustomerService
     {
 
         private ICustomerDal _customerDal;

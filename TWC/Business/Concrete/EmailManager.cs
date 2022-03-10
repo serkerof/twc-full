@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Business.Abstract;
 using Business.Constants;
 using Core.Utilities.Results;
+using Core.DataAccess.Abstract;
 using DataAccess.Abstract;
 using Entities.Concrete;
 

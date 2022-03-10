@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[4.4.1, )"
             },
+            "EmailValidation": {
+              "target": "Package",
+              "version": "[1.0.7, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[10.3.6, )"
@@ -60,14 +64,6 @@
               "target": "Package",
               "version": "[6.0.3, )"
             },
-            "Microsoft.AspNetCore.Http": {
-              "target": "Package",
-              "version": "[2.2.2, )"
-            },
-            "Microsoft.AspNetCore.Http.Abstractions": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
             "Microsoft.Azure.DocumentDB.Core": {
               "target": "Package",
               "version": "[2.17.0, )"
@@ -76,15 +72,9 @@
               "target": "Package",
               "version": "[6.0.2, )"
             },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Microsoft.Extensions.Configuration": {
               "target": "Package",
-              "version": "[6.0.2, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.1, )"
+              "version": "[6.0.1, )"
             },
             "NuGet.Protocol": {
               "target": "Package",
@@ -94,14 +84,6 @@
               "target": "Package",
               "version": "[4.5.1, )"
             },
-            "System.Diagnostics.DiagnosticSource": {
-              "target": "Package",
-              "version": "[6.0.0, )"
-            },
-            "System.IO.FileSystem": {
-              "target": "Package",
-              "version": "[4.3.0, )"
-            },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.16.0, )"
@@ -110,13 +92,9 @@
               "target": "Package",
               "version": "[4.5.4, )"
             },
-            "System.Reflection": {
+            "Validation": {
               "target": "Package",
-              "version": "[4.3.0, )"
-            },
-            "System.Security.AccessControl": {
-              "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[2.5.51, )"
             }
           },
           "imports": [
@@ -181,12 +159,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "System.Collections": {
-              "target": "Package",
-              "version": "[4.3.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

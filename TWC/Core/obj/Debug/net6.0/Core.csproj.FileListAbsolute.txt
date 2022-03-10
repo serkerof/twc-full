@@ -12,3 +12,5 @@ C:\Users\info\Desktop\deps\TWC\Core\obj\Debug\net6.0\refint\Core.dll
 C:\Users\info\Desktop\deps\TWC\Core\obj\Debug\net6.0\Core.pdb
 C:\Users\info\Desktop\deps\TWC\Core\obj\Debug\net6.0\Core.genruntimeconfig.cache
 C:\Users\info\Desktop\deps\TWC\Core\obj\Debug\net6.0\ref\Core.dll
+C:\Users\info\Desktop\deps\TWC\Core\obj\Debug\net6.0\Interop.Accessibility.dll
+C:\Users\info\Desktop\deps\TWC\Core\obj\Debug\net6.0\Core.csproj.ResolveComReference.cache
