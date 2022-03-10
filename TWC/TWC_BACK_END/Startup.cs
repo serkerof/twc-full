@@ -90,10 +90,10 @@ namespace TWC_BACK_END
 
             app.UseRouting();
 
-            app.UseAuthorization();
 
             app.UseAuthentication();
 
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

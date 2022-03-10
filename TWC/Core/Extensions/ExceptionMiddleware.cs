@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System.ComponentModel.DataAnnotations;
 using System.Net;
+using Microsoft.IdentityModel.Tokens;
+using System.Collections.Generic;
 
 namespace Core.Extensions
 {
@@ -35,7 +37,9 @@ namespace Core.Extensions
             if (e.GetType() == typeof(ValidationException))
             {
                 message = e.Message;
-                errors = ((ValidationException)e).Errors;
+                errors = ((IEnumerable<ValidationFailure>)(ValidationException)e);
+
+
                 httpContext.Response.StatusCode = 400;
 
                 return httpContext.Response.WriteAsync(new ValidationErrorDetails

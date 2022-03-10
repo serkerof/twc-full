@@ -158,17 +158,25 @@
               "target": "Package",
               "version": "[6.0.3, )"
             },
+            "Microsoft.Azure.DocumentDB": {
+              "target": "Package",
+              "version": "[2.17.0, )"
+            },
             "Microsoft.Azure.DocumentDB.Core": {
               "target": "Package",
               "version": "[2.17.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[6.0.1, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.16.0, )"
             },
             "NuGet.Protocol": {
               "target": "Package",
@@ -186,9 +194,21 @@
               "target": "Package",
               "version": "[4.5.4, )"
             },
+            "System.Runtime": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "System.Security.Claims": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "Validation": {
               "target": "Package",
               "version": "[2.5.51, )"
+            },
+            "ValidationUtils": {
+              "target": "Package",
+              "version": "[2018.10115.10450.16, )"
             }
           },
           "imports": [
@@ -260,6 +280,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.2, )"
+            },
+            "Microsoft.Extensions.Configuration.UserSecrets": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
@@ -401,6 +425,22 @@
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.3, )"
+            },
+            "Microsoft.Extensions.ApiDescription.Client": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "NSwag.ApiDescription.Client": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[13.0.5, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

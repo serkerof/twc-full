@@ -64,17 +64,25 @@
               "target": "Package",
               "version": "[6.0.3, )"
             },
+            "Microsoft.Azure.DocumentDB": {
+              "target": "Package",
+              "version": "[2.17.0, )"
+            },
             "Microsoft.Azure.DocumentDB.Core": {
               "target": "Package",
               "version": "[2.17.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[6.0.1, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.16.0, )"
             },
             "NuGet.Protocol": {
               "target": "Package",
@@ -92,9 +100,21 @@
               "target": "Package",
               "version": "[4.5.4, )"
             },
+            "System.Runtime": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "System.Security.Claims": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "Validation": {
               "target": "Package",
               "version": "[2.5.51, )"
+            },
+            "ValidationUtils": {
+              "target": "Package",
+              "version": "[2018.10115.10450.16, )"
             }
           },
           "imports": [

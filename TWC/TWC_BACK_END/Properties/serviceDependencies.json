@@ -1,11 +1,3 @@
 {
-  "dependencies": {
-    "secrets1": {
-      "type": "secrets"
-    },
-    "appInsights1": {
-      "type": "appInsights",
-      "connectionId": null
-    }
-  }
+  "dependencies": {}
 }

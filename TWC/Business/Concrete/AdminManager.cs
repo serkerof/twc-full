@@ -9,6 +9,7 @@ using DataAccess.Abstract;
 using Entities.Concrete;
 using NuGet.Protocol.Plugins;
 using Business.Concrete;
+using Core.Utilities.Results;
 
 namespace Business.Concrete
 {
@@ -58,6 +59,31 @@ namespace Business.Concrete
         }
 
         public Admin GetByMail(string email)
+        {
+            throw new NotImplementedException();
+        }
+
+        IDataResult<List<Admin>> IAdminService.GetList()
+        {
+            throw new NotImplementedException();
+        }
+
+        IDataResult<Admin> IAdminService.Get(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        IResult IAdminService.Add(Admin admin)
+        {
+            throw new NotImplementedException();
+        }
+
+        IResult IAdminService.Update(Admin admin)
+        {
+            throw new NotImplementedException();
+        }
+
+        IResult IAdminService.Delete(Admin admin)
         {
             throw new NotImplementedException();
         }
