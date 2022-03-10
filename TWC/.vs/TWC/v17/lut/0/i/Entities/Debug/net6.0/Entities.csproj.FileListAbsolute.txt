@@ -1,0 +1,12 @@
+C:\Users\info\Desktop\deps\TWC\.vs\TWC\v17\lut\0\b\Entities\Debug\net6.0\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\Users\info\Desktop\deps\TWC\.vs\TWC\v17\lut\0\b\Entities\Debug\net6.0\Cosmos.CRTCompat.dll
+C:\Users\info\Desktop\deps\TWC\.vs\TWC\v17\lut\0\b\Entities\Debug\net6.0\Entities.deps.json
+C:\Users\info\Desktop\deps\TWC\.vs\TWC\v17\lut\0\b\Entities\Debug\net6.0\Entities.dll
+C:\Users\info\Desktop\deps\TWC\.vs\TWC\v17\lut\0\i\Entities\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+C:\Users\info\Desktop\deps\TWC\.vs\TWC\v17\lut\0\i\Entities\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\info\Desktop\deps\TWC\.vs\TWC\v17\lut\0\i\Entities\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+C:\Users\info\Desktop\deps\TWC\.vs\TWC\v17\lut\0\i\Entities\Debug\net6.0\Entities.AssemblyInfo.cs
+C:\Users\info\Desktop\deps\TWC\.vs\TWC\v17\lut\0\i\Entities\Debug\net6.0\Entities.csproj.CopyComplete
+C:\Users\info\Desktop\deps\TWC\.vs\TWC\v17\lut\0\i\Entities\Debug\net6.0\Entities.dll
+C:\Users\info\Desktop\deps\TWC\.vs\TWC\v17\lut\0\i\Entities\Debug\net6.0\refint\Entities.dll
+C:\Users\info\Desktop\deps\TWC\.vs\TWC\v17\lut\0\i\Entities\Debug\net6.0\ref\Entities.dll
