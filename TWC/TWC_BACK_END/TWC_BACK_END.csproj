@@ -7,6 +7,7 @@
     <StartupObject>TWC_BACK_END.Program</StartupObject>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <UserSecretsId>8e799226-42fc-4a48-a71b-4285f45f94a0</UserSecretsId>
+    <DebugType>embedded</DebugType>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

@@ -21,7 +21,7 @@ namespace DataAccess.Concrete.EntityFrameWork
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-K4GQOET\SQLEXPRESS02;Initial Catalog=TWC;Integrated Security=True");
+            optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-K4GQOET\SQLEXPRESS;Initial Catalog=TWC;Integrated Security=True");
         }
 
     }

@@ -1,4 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
+using System.Net;
+using Microsoft.IdentityModel.Tokens;
+using System.Collections.Generic;
 
 namespace Core.Extensions
 {
@@ -16,6 +20,11 @@ namespace Core.Extensions
             {
                 await HandleExceptionAsync(httpContext, e);
             }
+        }
+
+        private Task HandleExceptionAsync(HttpContext httpContext, Exception e)
+        {
+            throw new NotImplementedException();
         }
     }
 }
