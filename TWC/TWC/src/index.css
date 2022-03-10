@@ -21,7 +21,7 @@
   -moz-border-radius: 202px;
   -ms-border-radius: 202px;
   -o-border-radius: 202px;
-    border-radius: 202px;
+  border-radius: 202px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -686,9 +686,35 @@ button {
 }
 
 .thumbs .alice-carousel__stage {
-  display: flex;
-  justify-content: space-around
 }
+
+.thumbs .alice-carousel__stage {
+  transition: all ease 1s;
+}
+
+.thumbs .alice-carousel__stage-item {
+  width: 20%;
+}
+
+.thumbs .alice-carousel__stage .__active .team_team_member_thumb_img_container__gZMmF {
+  animation: thumbAnim 2s ease 0s 1 normal forwards;
+}
+
+
+@keyframes thumbAnim {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 
 .main {
   max-width: 425px;
@@ -797,7 +823,7 @@ button {
   -moz-transition: margin .28s ease-in-out 0s;
   -ms-transition: margin .28s ease-in-out 0s;
   -o-transition: margin .28s ease-in-out 0s;
-    transition: margin .28s ease-in-out 0s;
+  transition: margin .28s ease-in-out 0s;
 }
 
 .input-group {
@@ -871,6 +897,9 @@ input.text-area-placeholder-changer::placeholder {
     margin-bottom: 23px
   }
 
+  .thumbs .alice-carousel__stage-item {
+    width: 50%;
+  }
 
   .team-responsive .alice-carousel__stage-item {
     width: max-content !important;
@@ -1040,12 +1069,12 @@ input.text-area-placeholder-changer::placeholder {
   }
 
   .size-font-mb-h2 {
-    font-size: 25px!important;
+    font-size: 25px !important;
     line-height: 40px !important
   }
 
   .size-font-mb-p {
-    font-size: 16px!important
+    font-size: 16px !important
   }
 
   .size-font-mb-span {
@@ -1102,6 +1131,7 @@ input.text-area-placeholder-changer::placeholder {
   .mb-mb-20 {
     margin-bottom: 20px
   }
+
   .mb-mb-10 {
     margin-bottom: 10px
   }

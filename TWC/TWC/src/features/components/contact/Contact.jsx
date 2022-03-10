@@ -21,7 +21,7 @@ const Contact = () => {
     <main >
       <section className={`${styles.map_numbers}`}>
         <div className={`${styles.map}`}>
-          <GoogleMapFancyLoader />
+          {/* <GoogleMapFancyLoader /> */}
         </div>
         <div className={`${styles.number}`}>
           <AnimationOnScroll animateIn="animate__zoomInDown">
