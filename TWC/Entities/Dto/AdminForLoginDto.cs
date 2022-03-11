@@ -9,5 +9,6 @@ namespace Entities.Dto
         public int ID { get; set; }
         public int EmailID { get; set; }
         public Email Email { get; set; }
+
     }
 }
