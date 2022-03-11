@@ -2,11 +2,7 @@
 using Core.Utilities.Results;
 using Entities.Concrete;
 using Entities.Dto;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 namespace Business.Abstract
 {
     public interface IAuthService
@@ -37,7 +33,5 @@ namespace Business.Abstract
         IDataResult<Employee> Login(EmployeeForLoginDto EmployeeForLoginDto);
         IResult EmployeeExists(string email);
         IDataResult<AccessToken> CreateAccessToken(Employee employee);
-
-
     }
 }

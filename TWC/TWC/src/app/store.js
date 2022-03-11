@@ -5,8 +5,8 @@ import rootReducer from './reducers'
 const storeData = () => {
     return {
         reducer: rootReducer
-    }
-}
+    };
+};
 
 const store = configureStore(storeData());
 

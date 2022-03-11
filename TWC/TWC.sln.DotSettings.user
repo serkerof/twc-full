@@ -1,0 +1,15 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/GeneratedFilesAndFolders/=29B108D3_002DAFB1_002D4DE9_002DA3E9_002DE71BAD8B4F4E/@EntryIndexedValue">29B108D3-AFB1-4DE9-A3E9-E71BAD8B4F4E</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/GeneratedFilesAndFolders/=A49FA841_002D5AEF_002D4A25_002DAB25_002D521C95AB171C/@EntryIndexedValue">A49FA841-5AEF-4A25-AB25-521C95AB171C</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/GeneratedFilesAndFolders/=C5D398E4_002D381A_002D444C_002DBC84_002D22EC8DD16858/@EntryIndexedValue">C5D398E4-381A-444C-BC84-22EC8DD16858</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/GeneratedFilesAndFolders/=DC9C7464_002D1BE0_002D4B23_002DB73B_002D64D4C34C3698/@EntryIndexedValue">DC9C7464-1BE0-4B23-B73B-64D4C34C3698</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/GeneratedFilesAndFolders/=E9A3C857_002D8993_002D47F5_002DBB55_002D2EAC012EB38F/@EntryIndexedValue">E9A3C857-8993-47F5-BB55-2EAC012EB38F</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/GeneratedFilesAndFolders/=FEAB9695_002D34A3_002D438E_002DA4F3_002D431C3F5C6F24/@EntryIndexedValue">FEAB9695-34A3-438E-A4F3-431C3F5C6F24</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/AnalysisEnabled/@EntryValue">SOLUTION</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/SweaWarningsMode/@EntryValue">ShowAndRun</s:String>
+	
+	
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d50342b5_002Dce79_002D4ca7_002D96e0_002D7df97c463a0c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

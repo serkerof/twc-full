@@ -26,8 +26,7 @@ const About = () => {
         isBlack={true}
         img={aboutmain}
         textStructure={'Biznes planlarınız və strategiyalarınız üçün ekspert məsləhətləri'}
-        textStructureData={'Expert advice for your business plans and strategies'}
-      />
+        textStructureData={'Expert advice for your business plans and strategies'}/>
       <section className={`${styles.services_header} d-flex direction-column justify-center align-center`}>
         <span className={`${styles.service_sub_title}`}>ProfESSİONAL KOMANDAMIZLA</span>
         <span className={`${styles.service_title}`}>Konsaltinq Servislərimiz</span>
@@ -42,19 +41,19 @@ const About = () => {
           boxContainerClass={`${styles.service_logo_group} d-flex  justify-between`}
           boxClass={`${styles.service_logo_box} d-flex direction-column align-center justify-center `}
           imgClass={`${styles.service_logo}`}
-          spanClass={`${styles.service_logo_sub_title}`}
-        />
+          spanClass={`${styles.service_logo_sub_title}`}/>
       </section>
 
       <div className={`${styles.container}`}>
         <section className={`${styles.topic_section} d-flex`}>
           <div className={`${styles.image_section}`}>
-            <img className={`${styles.topic_image}`} src={topicImage1} alt="" />
+            <img className={`${styles.topic_image}`} src={topicImage1} alt=""/>
           </div>
           <div className={`${styles.paragraph_section} d-flex direction-column justify-center`}>
             <span className={`${styles.sub_header}`}>Haqqımızda</span>
             <p className={`${styles.topic_desc}`}>
-              TWC cəmiyyətin və bizneslərin <br /> ən əhəmiyyətli problemlərini həll etmək üçün kreativliyin <br />{' '}
+              TWC cəmiyyətin və bizneslərin <br/> ən əhəmiyyətli problemlərini həll etmək üçün kreativliyin <br/>{' '
+              }
               sərhədlərinin olmadığı yerdir
             </p>
           </div>
@@ -68,19 +67,19 @@ const About = () => {
             </p>
           </div>
           <div className={`${styles.image_section} `}>
-            <img className={`${styles.topic_image}`} src={topicImage2} alt="" />
+            <img className={`${styles.topic_image}`} src={topicImage2} alt=""/>
           </div>
         </section>
 
         <section className={`${styles.topic_section} d-flex`}>
           <div className={`${styles.image_section}`}>
-            <img className={`${styles.topic_image}`} src={topicImage3} alt="" />
+            <img className={`${styles.topic_image}`} src={topicImage3} alt=""/>
           </div>
           <div className={`${styles.paragraph_section} d-flex direction-column justify-center`}>
             <span className={`${styles.sub_header}`}>Haqqımızda</span>
             <p className={`${styles.topic_desc}`}>
-              Bugün biz ən böyük oyunçulara <br /> sənayeni müəyyən edən <br /> problemləri həll etməkdə və <br />{' '}
-              davamlı biznes dəyəri <br /> yaratmaqda kömək edirik.
+              Bugün biz ən böyük oyunçulara <br/> sənayeni müəyyən edən <br/> problemləri həll etməkdə və <br/>{' '}
+              davamlı biznes dəyəri <br/> yaratmaqda kömək edirik.
             </p>
           </div>
         </section>
@@ -89,12 +88,12 @@ const About = () => {
           <div className={`${styles.paragraph_section} d-flex direction-column justify-center`}>
             <span className={`${styles.sub_header}`}>Haqqımızda</span>
             <p className={`${styles.topic_desc}`}>
-              Komandamız özünə məhdudiyyət tanımayan və müştərilərə dəstək üçün özündə qlobal təcrübə və <br /> lokal
+              Komandamız özünə məhdudiyyət tanımayan və müştərilərə dəstək üçün özündə qlobal təcrübə və <br/> lokal
               anlayışı birləşdirənlərdən ibarətdir.
             </p>
           </div>
           <div className={`${styles.image_section} `}>
-            <img className={`${styles.topic_image}`} src={topicImage4} alt="" />
+            <img className={`${styles.topic_image}`} src={topicImage4} alt=""/>
           </div>
         </section>
       </div>
@@ -109,21 +108,21 @@ const About = () => {
         </div>
         <div className={`${styles.image_item_group} d-flex flex-wrap justify-between`}>
           <div className={`${styles.image_item_section}`}>
-            <img className={`${styles.image_item}`} src={valuesImage1} alt="" />
+            <img className={`${styles.image_item}`} src={valuesImage1} alt=""/>
             <span className={`${styles.image_subtitle}`}>Dürüstlük</span>
             <p className={`${styles.image_item_desc}`}>
               Etdiyimiz və dediyimiz hər şeydə intellektual dürüstlük kodu izlənilməlidir.
             </p>
           </div>
           <div className={`${styles.image_item_section}`}>
-            <img className={`${styles.image_item}`} src={valuesImage2} alt="" />
+            <img className={`${styles.image_item}`} src={valuesImage2} alt=""/>
             <span className={`${styles.image_subtitle}`}>Əməkdaşlıq</span>
             <p className={`${styles.image_item_desc}`}>
               Hər bir daxili və xarici TWC biznes əlaqəsi uzun müddətli olmalıdır.
             </p>
           </div>
           <div className={`${styles.image_item_section}`}>
-            <img className={`${styles.image_item}`} src={valuesImage3} alt="" />
+            <img className={`${styles.image_item}`} src={valuesImage3} alt=""/>
             <span className={`${styles.image_subtitle}`}>Fərqlilik</span>
             <p className={`${styles.image_item_desc}`}>
               Sıradan olmayan nəticələr əldə etmək üçün hər bir təcrübəyə, bacarığa və biliyə hörmət edilməlidir.
@@ -131,7 +130,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <Footer />
+      <Footer/>
     </div>
   );
 };

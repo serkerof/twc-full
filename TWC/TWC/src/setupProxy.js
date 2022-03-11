@@ -4,11 +4,12 @@ const context = [
     "/weatherforecast",
 ];
 
-module.exports = function (app) {
-    const appProxy = createProxyMiddleware(context, {
-        target: 'https://localhost:7271',
-        secure: false
-    });
+module.exports = function(app) {
+    const appProxy = createProxyMiddleware(context,
+        {
+            target: 'https://localhost:7271',
+            secure: false
+        });
 
     app.use(appProxy);
 };

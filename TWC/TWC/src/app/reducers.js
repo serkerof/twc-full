@@ -8,16 +8,16 @@ import aboutReducer from './../features/components/about/aboutSlice';
 import testimonialsReducer from './../features/components/testimonials/testimonialsSlice';
 import articlesReducer from './../features/components/articles/articlesSlice';
 
-const rootReducer =  {
+const rootReducer = {
     navigation: navigationReducer,
     footer: footerReducer,
     users: usersReducer,
-    industries:industriesReducer,
-    careers:careersReducer,
-    services:servicesReducer,
-    about:aboutReducer,
-    testimonials:testimonialsReducer,
-    articles:articlesReducer
-}
+    industries: industriesReducer,
+    careers: careersReducer,
+    services: servicesReducer,
+    about: aboutReducer,
+    testimonials: testimonialsReducer,
+    articles: articlesReducer
+};
 
 export default rootReducer

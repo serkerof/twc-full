@@ -8,7 +8,9 @@ namespace Core.Extensions
 {
     public class ExceptionMiddlewareBase
     {
+#pragma warning disable CS0649 // Field 'ExceptionMiddlewareBase._next' is never assigned to, and will always have its default value null
         private RequestDelegate _next;
+#pragma warning restore CS0649 // Field 'ExceptionMiddlewareBase._next' is never assigned to, and will always have its default value null
 
         public async Task InvokeAsync(HttpContext httpContext)
         {
