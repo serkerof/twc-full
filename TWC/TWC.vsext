@@ -1,0 +1,340 @@
+{
+  "id": "b822a02a-6969-4f11-9381-63f6eeb273ff",
+  "name": "My Visual Studio extensions",
+  "description": "A collection of my Visual Studio extensions",
+  "version": "1.0",
+  "extensions": [
+    {
+      "name": ".NET 6 IoT Hub REST API Template",
+      "vsixId": "DotNet6IoTHubRESTAPITemplate"
+    },
+    {
+      "name": ".NET 6 REST API Template",
+      "vsixId": "DotNet6RESTAPITemplate"
+    },
+    {
+      "name": ".NET nanoFramework Extension",
+      "vsixId": "bf694e17-fa5f-4877-9317-6d3664b2689a"
+    },
+    {
+      "name": "ASP.NET Core Extensions - Syncfusion",
+      "vsixId": "6F4EC1F9-16D8-4D80-8D67-CA2AB7FF4AEB"
+    },
+    {
+      "name": "ASP.NET Zero Power Tools",
+      "vsixId": "AspNetZeroPowerTools.9906ae75-6ad5-42ef-b6fe-18e263dde53c"
+    },
+    {
+      "name": "Auto Close Folders",
+      "vsixId": "e3970d50-c08e-41c9-ac5a-19a0914b97c3"
+    },
+    {
+      "name": "Blazor Component",
+      "vsixId": "blazor_extension.348090da-88b7-47c8-a966-44dad2825490"
+    },
+    {
+      "name": "Blazor Component Code Behind Templates (VS2022)",
+      "vsixId": "RazorComponentCodeBehind.3C881215-7612-4A35-AA8D-0D2787F38D81"
+    },
+    {
+      "name": "Build Only Startup Project",
+      "vsixId": "BuildStartProject.dev.0532a8bb-2927-47cc-9eeb-021abb344fa4"
+    },
+    {
+      "name": "BuildVision",
+      "vsixId": "837c3c3b-8382-4839-9c9a-807b758a929f"
+    },
+    {
+      "name": "C# Methods Code Snippets",
+      "vsixId": "e2abe71c-24a4-4e59-8cc1-8c7805afe23f"
+    },
+    {
+      "name": "Class Builder Generator",
+      "vsixId": "ClassBuilderGenerator.8f8688f2-637c-4408-8cb9-d35e3e016286"
+    },
+    {
+      "name": "ClaudiaIDE",
+      "vsixId": "ClaudiaIDE..7442ac19-889b-4699-a817-e6e054877ee3"
+    },
+    {
+      "name": "Clean Solution",
+      "vsixId": "55640f47-34bc-436b-8820-e7f64fbb31fc"
+    },
+    {
+      "name": "Code Assistant",
+      "vsixId": "CodeAssistant.ac31b8b2-817c-45d9-8949-f3844a4e9186"
+    },
+    {
+      "name": "Code Connections",
+      "vsixId": "CodeConnections.4af0cec0-ea71-4add-b06a-975b18ba7aed"
+    },
+    {
+      "name": "CodeMaid VS2022",
+      "vsixId": "9079e73d-3fbb-4e07-8dab-f44fa5d8e8b5"
+    },
+    {
+      "name": "CodeTime",
+      "vsixId": "Software.569c24af-f7e5-4df6-b40a-157caa132d9c"
+    },
+    {
+      "name": "Color Preview",
+      "vsixId": "EditorColorPreview.06059b78-ceae-4188-905d-be8877234e35"
+    },
+    {
+      "name": "CSharp Obfuscator for Visual Studio 2022",
+      "vsixId": "CSharpObfuscator2022.2ba5bde9-20b5-42bd-adc6-a5b2fbe98792"
+    },
+    {
+      "name": "Cyberpunk - Theme",
+      "vsixId": "Cyberpunk_Theme.e1e706e2-05d3-4da9-8754-652cd8ab65f4"
+    },
+    {
+      "name": "Debug Attach Manager",
+      "vsixId": "FA1028B5-FB96-4C67-BDE0-F4EA17CF9EE4"
+    },
+    {
+      "name": "Debug Help Context",
+      "vsixId": "ShowHelpContext.8ddc4ea8-5de7-49ac-947d-4c50ff2854a1"
+    },
+    {
+      "name": "Debug Output Filter",
+      "vsixId": "NiahTextFilter.VS2022.0ff19afe-4aa1-4bac-9ca3-716b0aa6dc6b"
+    },
+    {
+      "name": "Deepdark Material Theme",
+      "vsixId": "DeepDarkMaterial.4c1c42b0-9280-4ecb-8ec2-65e5a07f2240"
+    },
+    {
+      "name": "Dr.Explain VSIP",
+      "vsixId": "06ed0752-59e4-434a-a4e4-ac47e52174da"
+    },
+    {
+      "name": "EF Core Power Tools",
+      "vsixId": "f4c4712c-ceae-4803-8e52-0e2049d5de9f"
+    },
+    {
+      "name": "EntityFramework Reverse POCO Generator",
+      "vsixId": "EntityFramework_Reverse_POCO_Generator..d542a934-8bd6-4136-b490-5f0049d62033"
+    },
+    {
+      "name": "Error Helper",
+      "vsixId": "ErrorHelper.e90a7159-7bf3-45f6-b3d5-e80fd5978133"
+    },
+    {
+      "name": "Extensible Markup Extension",
+      "vsixId": "ExtensibleMarkupExtension.22576fb7-5c4b-4c90-aab4-651a8d33d63c"
+    },
+    {
+      "name": "Extension Manager 2022",
+      "vsixId": "4a196712-2c3f-4730-ad1d-e7cda4185eb3"
+    },
+    {
+      "name": "FarmasiX RabbitMQ Consumer Console Template",
+      "vsixId": "FarmasiX.RabbitMQ.Consumer.Vsix.e839d724-745e-4a94-b010-c9c67e8332ca"
+    },
+    {
+      "name": "Fine Code Coverage",
+      "vsixId": "FineCodeCoverage2022.ad53fb28-7a11-4465-a27a-3550499ea4a1"
+    },
+    {
+      "name": "Format document on Save",
+      "vsixId": "2f4fac85-be4e-4d7a-8c74-93cc4389b427"
+    },
+    {
+      "name": "Git Pull",
+      "vsixId": "c71355fb-bd6f-4235-a3b0-0ebaa2bad36f"
+    },
+    {
+      "name": "GitHub Themes",
+      "vsixId": "GitHubDarkTheme.869f0b49-f48e-4ba7-94dd-91368e3c8810"
+    },
+    {
+      "name": "Goodnight Theme",
+      "vsixId": "Goodnight.e1e706e2-05d3-4da9-8754-652cd8ab65f4"
+    },
+    {
+      "name": "Image Optimizer (64-bit)",
+      "vsixId": "fc4e241f-57de-4032-9c89-527984c0a0ae"
+    },
+    {
+      "name": "JavaScript Snippet Pack",
+      "vsixId": "2a20580c-7be4-4440-bcd6-8dcf5aa2004e"
+    },
+    {
+      "name": "JFlepp.VS.Theme.DarkYellow",
+      "vsixId": "JFlepp.VS.Theme.DarkYellow.e1e706e2-05d3-4da9-8754-652cd8ab65f4"
+    },
+    {
+      "name": "Live Share 2022",
+      "vsixId": "Microsoft.VisualStudio.LiveShare.2022"
+    },
+    {
+      "name": "Marvel Theme",
+      "vsixId": "Marvel.27f38572-3568-4327-9ba0-afcb574040db"
+    },
+    {
+      "name": "Microservices Quick-Start",
+      "vsixId": "GoodToCode.Microservices.Vsix"
+    },
+    {
+      "name": "MicroserviceTemplate",
+      "vsixId": "Package.76abdd13-e59c-df90-4cf4-076f290f8a6b"
+    },
+    {
+      "name": "ML.NET Model Builder 2022",
+      "vsixId": "A274A0E2-E41E-40CC-A694-8D5D14BBD2D0"
+    },
+    {
+      "name": "Monokai-night",
+      "vsixId": "monokai_night.e1e706e2-05d3-4da9-8754-652cd8ab65f4"
+    },
+    {
+      "name": "Night Owl",
+      "vsixId": "NightOwl.97416395-DBA1-48FE-B9CA-3474533BDA58"
+    },
+    {
+      "name": "nolock API Helper",
+      "vsixId": "nolock.VSIX.ApiHelper"
+    },
+    {
+      "name": "NPM Task Runner",
+      "vsixId": "c5203f5f-4785-4c09-b383-688a100a9f5d"
+    },
+    {
+      "name": "NTypewriter editor for Visual Studio",
+      "vsixId": "NTypewriter.EditorForVisualStudio.d0c65a91-d297-4abb-8ce8-0e3b088ea250"
+    },
+    {
+      "name": "One Dark Pro",
+      "vsixId": "OneDarkPro.e1e706e2-05d3-4da9-8754-652cd8ab65f4"
+    },
+    {
+      "name": "Open Visual Studio Developer Command Prompt",
+      "vsixId": "0b710f98-7bfb-4fc2-bdf3-991faaa62156"
+    },
+    {
+      "name": "Project Filter",
+      "vsixId": "ProjectFilter.76800882-6e41-4df7-9db4-1945655b2620"
+    },
+    {
+      "name": "Project Reunion",
+      "vsixId": "Microsoft.ProjectReunion"
+    },
+    {
+      "name": "Qpick templates",
+      "vsixId": "Qpick.Tools..93416bcc-b4c3-4aa1-bc43-cc00583268d7"
+    },
+    {
+      "name": "React ASP.NET Core Template with redux-saga",
+      "vsixId": "VSIXProject7.7d28bd2f-8346-442a-8b92-e54dbe0fcd99"
+    },
+    {
+      "name": "RedSOAPClient",
+      "vsixId": "RedSOAPClient.53dcfed8-df3e-4f88-9eb6-013b8d1070e0"
+    },
+    {
+      "name": "ResourceDictionary with Code-behind",
+      "vsixId": "ResourceDictionaryWithCodeBehindPackage.CE242489-2425-4131-9684-0A8485B79D5F"
+    },
+    {
+      "name": "REST API .NET 6 Solution Template",
+      "vsixId": "RestApiND.410f6b19-d590-425b-a635-401887f06436"
+    },
+    {
+      "name": "REST API .NET 6 Solution Template",
+      "vsixId": "RestApiN.410f6b19-d590-425b-a635-401887f06126"
+    },
+    {
+      "name": "REST API Client Code Generator for VS 2022",
+      "vsixId": "d9d55f37-214a-4592-8067-2f9d9906bcfd"
+    },
+    {
+      "name": "ResXManager",
+      "vsixId": "43b35fe0-1f30-48de-887a-68256474202a"
+    },
+    {
+      "name": "Serene",
+      "vsixId": "Serene_SerenityApplicationTemplate"
+    },
+    {
+      "name": "Show Missing Files 2022",
+      "vsixId": "VS2022.12af6940-b4ca-4cc5-852d-d0b06c9504e9"
+    },
+    {
+      "name": "Solution Error Visualizer 2022",
+      "vsixId": "SolutionErrorVisualizer2022.a392f96b-6b33-4b53-b4bb-3376a05f986c"
+    },
+    {
+      "name": "SonarLint for Visual Studio 2022",
+      "vsixId": "SonarLint.0DE19254-1DCA-4479-8EAF-58E5D677FF4D"
+    },
+    {
+      "name": "Text Sharp",
+      "vsixId": "2f76ad9f-f61d-4af7-ab13-7171a180b349"
+    },
+    {
+      "name": "Transparency Theme",
+      "vsixId": "TransparencyTheme.6cc8de5b-2a5e-4c9d-9bd2-98b77783b6c2"
+    },
+    {
+      "name": "T-SQL Analyzer",
+      "vsixId": "SqlAnalyzer.B4A17D54-3370-450B-8DBF-5439A179268C"
+    },
+    {
+      "name": "Unchase OData Connected Service VS2022",
+      "vsixId": "Unchase.OData.ConnectedService.afc46f39-8c64-4e14-85d0-af6c7c4291f4"
+    },
+    {
+      "name": "Unchase OpenAPI (Swagger) Connected Service VS2022",
+      "vsixId": "Unchase.OpenAPI.Connectedservice.63199638-6211-4285-ba8f-75b1f0326c2b"
+    },
+    {
+      "name": "Visual Studio Show Inline Errors",
+      "vsixId": "InlineErrorAdornment.a0918553-b2ac-46fc-b5d6-9d7284b9f2fa"
+    },
+    {
+      "name": "Visual Studio Theme Pack",
+      "vsixId": "VisualStudioThemePack.453e3fa1-2e0e-467e-abbd-1d08fe6468d1"
+    },
+    {
+      "name": "VisualSVN for Visual Studio 2022",
+      "vsixId": "VisualSVN.1F0E13B0-DFFB-4A21-A1FB-6A255830E073"
+    },
+    {
+      "name": "VS Theme Colors 2022",
+      "vsixId": "6ad27930-f7a1-4888-a172-c6fa4440e7a1"
+    },
+    {
+      "name": "VSCode Theme Converter",
+      "vsixId": "ThemeConverter.df309c71-fe30-4f88-bf07-d73fbc24fd11"
+    },
+    {
+      "name": "VsCodeOriginalTheme",
+      "vsixId": "VsCodeTheme.2022"
+    },
+    {
+      "name": "VsCommitizen",
+      "vsixId": "vs_commitizen.993809C6-9E90-4438-954E-ECE9D9E80E9B"
+    },
+    {
+      "name": "Wallaby.js for Visual Studio 2022",
+      "vsixId": "bdc9d432-09ed-11ec-9a03-0242ac130003"
+    },
+    {
+      "name": "Web Compiler 2022+",
+      "vsixId": "6e1b31b9-e1c1-4697-9b0a-e638eece7765"
+    },
+    {
+      "name": "WebPack Task Runner",
+      "vsixId": "471a020e-77f5-4c77-8ff0-59e08b6c5ba3"
+    },
+    {
+      "name": "WhiteSource Advise",
+      "vsixId": "wss_vs2022.3272c7c6-efb2-4f01-8b59-f28238144c64"
+    },
+    {
+      "name": "xUnit.net.TestGenerator2022",
+      "vsixId": "xUnit.net.TestGenerator2022.Yowko Tsai.8cdf9689-b6ff-4847-9baa-850482a5fee7"
+    }
+  ]
+}
