@@ -1,8 +1,6 @@
-using System.Linq.Expressions;
 using Core.DataAccess.Abstract;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Linq;
+using System.Linq.Expressions;
 
 namespace Core.DataAccess.Concrete
 {
@@ -35,10 +33,7 @@ namespace Core.DataAccess.Concrete
         {
             using (TContext context = new TContext())
             {
-
                 return context.Set<TEntity>().SingleOrDefault(filter) ?? new TEntity();
-
-
             }
         }
 

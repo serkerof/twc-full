@@ -7,6 +7,7 @@ namespace Core.Extensions
     {
         public string? Message { get; set; }
         public int StatusCode { get; set; }
+
         public override string ToString()
         {
             return JsonConvert.SerializeObject(this);
@@ -16,8 +17,5 @@ namespace Core.Extensions
     public class ValidationErrorDetails : ErrorDetails
     {
         public IEnumerable<ValidationFailure>? Errors { get; set; }
-
     }
-
-
 }

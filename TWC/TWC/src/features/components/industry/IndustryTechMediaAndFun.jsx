@@ -10,7 +10,6 @@ import groupItemImagePng1 from './assets/img/tme-group-item-1.png';
 import groupItemImagePng2 from './assets/img/tme-group-item-2.png';
 import groupItemImagePng3 from './assets/img/tme-group-item-3.png';
 
-
 const IndustryTechMediaAndFun = () => {
     return (
         <div>

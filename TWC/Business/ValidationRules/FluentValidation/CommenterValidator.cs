@@ -10,8 +10,6 @@ namespace Business.ValidationRules.FluentValidation
             RuleFor(x => x.Name).NotEmpty().WithMessage("Ad Boş ola bilməz");
             RuleFor(x => x.Surname).NotEmpty().WithMessage("Soyad Boş ola bilməz");
             RuleFor(x => x.ID).NotEmpty().WithMessage("Email Boş ola bilməz");
- 
         }
-
     }
 }

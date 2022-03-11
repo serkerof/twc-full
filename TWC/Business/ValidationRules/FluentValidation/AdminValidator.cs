@@ -14,6 +14,5 @@ namespace Business.ValidationRules.FluentValidation
             RuleFor(x => x.Password).Length(8, 20).WithMessage("Şifrə uzunluğu 8 ilə 20 arasında olmalıdır");
             RuleFor(x => x.Password).Matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[^\\da-zA-Z]).{8,20}$").WithMessage("Şifrə 8 ilə 20 arasında olmalıdır");
         }
-
     }
 }

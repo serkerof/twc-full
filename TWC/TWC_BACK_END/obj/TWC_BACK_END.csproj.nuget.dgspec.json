@@ -397,9 +397,6 @@
             "projectReferences": {
               "C:\\Users\\info\\Desktop\\deps\\TWC\\Business\\Business.csproj": {
                 "projectPath": "C:\\Users\\info\\Desktop\\deps\\TWC\\Business\\Business.csproj"
-              },
-              "C:\\Users\\info\\Desktop\\deps\\TWC\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\info\\Desktop\\deps\\TWC\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -437,10 +434,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[13.0.5, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

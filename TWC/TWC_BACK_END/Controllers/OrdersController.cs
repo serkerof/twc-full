@@ -1,6 +1,5 @@
-﻿using Entities.Concrete;
-using Business.Abstract;
-using Microsoft.AspNetCore.Http;
+﻿using Business.Abstract;
+using Entities.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TWC_BACK_END.Controllers
@@ -9,7 +8,6 @@ namespace TWC_BACK_END.Controllers
     [ApiController]
     public class OrdersController : ControllerBase
     {
-
         private IOrderService _orderService;
 
         public OrdersController(IOrderService orderService)
@@ -71,7 +69,5 @@ namespace TWC_BACK_END.Controllers
             }
             return BadRequest(result.Message);
         }
-
-        
     }
 }

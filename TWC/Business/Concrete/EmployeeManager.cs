@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Business.Abstract;
+﻿using Business.Abstract;
 using Business.Constants;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
@@ -14,9 +9,7 @@ namespace Business.Concrete
 {
     public class EmployeeManager : IEmployeeService
     {
-
         private IEmployeeDal _employeeDal;
-
 
         public EmployeeManager(IEmployeeDal employeeDal)
         {
@@ -44,7 +37,6 @@ namespace Business.Concrete
         public IDataResult<Employee> Get(int id)
         {
             return new SuccessDataResult<Employee>(_employeeDal.Get(filter: x => x.ID == id));
-
         }
 
         public IDataResult<List<Employee>> GetList()

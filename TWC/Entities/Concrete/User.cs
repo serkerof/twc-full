@@ -10,6 +10,5 @@ namespace Entities.Concrete
         public int EmailID { get; set; }
         public int MobileNumber { get; set; }
         public int Password { get; set; }
-
     }
 }

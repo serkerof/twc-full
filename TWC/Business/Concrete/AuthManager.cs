@@ -1,26 +1,13 @@
 ﻿using Azure.Core;
 using Business.Abstract;
+using Core.Utilities.Results;
 using Entities.Concrete;
 using Entities.Dto;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
-using Core.Utilities.Results;
-
-
-
 
 namespace Business.Concrete
 {
     public class AuthManager : IAuthService
     {
-
-
-
         public IDataResult<Admin> Register(AdminForRegisterDto adminForRegisterDto, string password)
         {
             throw new NotImplementedException();
@@ -114,14 +101,11 @@ namespace Business.Concrete
         public IResult UserExists(string email)
         {
             throw new NotImplementedException();
-
         }
 
         public IDataResult<AccessToken> CreateAccessToken(User user)
         {
             throw new NotImplementedException();
-
         }
     }
-
 }

@@ -23,7 +23,5 @@
         public static string NotValidPasswordLength = "Şifrə 6 simvoldan çox olmamalıdır";
         public static string NotValidPasswordConfirmLength = "Şifrə təkrarı 6 simvoldan çox olmamalıdır";
         public static string AuthorizationDenied = "İcazə rədd edildi";
-
-
     }
 }

@@ -3,9 +3,8 @@ using Entities.Concrete;
 
 namespace DataAccess.Abstract
 {
-    public interface ICommenterDal: IEntityRepository<Commenter>
-    
+    public interface ICommenterDal : IEntityRepository<Commenter>
+
     {
-         
     }
 }

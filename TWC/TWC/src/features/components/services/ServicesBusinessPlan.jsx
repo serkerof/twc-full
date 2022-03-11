@@ -32,7 +32,6 @@ const ServicesBusinessPlan = () => {
                             <span className={`${styles.sub_header}`}>
                                 BİZNES PLAN VƏ TİƏ
 
-
                             </span>
                             <span className={`${styles.service_title}`}>
                                 Biznesinizi bizimlə inkişaf etdirin
@@ -93,7 +92,6 @@ const ServicesBusinessPlan = () => {
                     >
                         <span className={`${styles.sub_header}`}>
                             BİZNES PLAN VƏ TİƏ
-
 
                         </span>
                         <span className={`${styles.service_details_title}`}>

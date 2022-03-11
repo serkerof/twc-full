@@ -1,20 +1,16 @@
 import React from 'react'
 
-
 const inject = (
     ParamsDom, ParamsApp, ParamsProvider, ParamsRouter, ParamsStore
-) =>
-{
-    const rootElement = document.getElementById( 'root' );
+) => {
+    const rootElement = document.getElementById('root');
     return {
-        obj: ParamsDom.render( <ParamsProvider store={ParamsStore}>
+        obj: ParamsDom.render(<ParamsProvider store={ParamsStore}>
             <ParamsRouter>
                 <ParamsApp />
             </ParamsRouter>
-        </ParamsProvider>, rootElement )
+        </ParamsProvider>, rootElement)
     }
 }
-
-
 
 export default inject

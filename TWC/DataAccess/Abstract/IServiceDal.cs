@@ -3,9 +3,8 @@ using Entities.Concrete;
 
 namespace DataAccess.Abstract
 {
-    public interface IServiceDal: IEntityRepository<Service>
-    
+    public interface IServiceDal : IEntityRepository<Service>
+
     {
-         
     }
 }

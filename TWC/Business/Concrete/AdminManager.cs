@@ -9,9 +9,7 @@ namespace Business.Concrete
 {
     public class AdminManager : IAdminService
     {
-
         private IAdminDal _adminDal;
-
 
         public AdminManager(IAdminDal adminDal)
         {
@@ -39,7 +37,6 @@ namespace Business.Concrete
         public IDataResult<Admin> Get(int id)
         {
             return new SuccessDataResult<Admin>(_adminDal.Get(filter: x => x.ID == id));
-
         }
 
         public IDataResult<List<Admin>> GetList()

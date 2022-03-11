@@ -5,56 +5,54 @@ using System.Net;
 
 namespace Core.Extensions
 {
-	public class ExceptionMiddleware
-	{
-		private RequestDelegate _next;
+    public class ExceptionMiddleware
+    {
+        private RequestDelegate _next;
 
-		public ExceptionMiddleware(RequestDelegate next)
-		{
-			_next = next;
-		}
+        public ExceptionMiddleware(RequestDelegate next)
+        {
+            _next = next;
+        }
 
-		public async Task InvokeAsync(HttpContext httpContext)
-		{
-			try
-			{
-				await _next(httpContext).ConfigureAwait(false);
-			}
-			catch (Exception e)
-			{
-				await HandleExceptionAsync(httpContext, e);
-			}
-		}
+        public async Task InvokeAsync(HttpContext httpContext)
+        {
+            try
+            {
+                await _next(httpContext).ConfigureAwait(false);
+            }
+            catch (Exception e)
+            {
+                await HandleExceptionAsync(httpContext, e);
+            }
+        }
 
-		private Task HandleExceptionAsync(HttpContext httpContext, Exception e)
-		{
-			httpContext.Response.ContentType = "application/json";
-			httpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+        private Task HandleExceptionAsync(HttpContext httpContext, Exception e)
+        {
+            httpContext.Response.ContentType = "application/json";
+            httpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 
-			string message = "Internal Server Error";
-			IEnumerable<Microsoft.IdentityModel.Tokens.ValidationFailure> errors;
-			if (e.GetType() == typeof(ValidationException))
-			{
-				message = e.Message;
-				errors = ((IEnumerable<ValidationFailure>)(ValidationException)e);
+            string message = "Internal Server Error";
+            IEnumerable<Microsoft.IdentityModel.Tokens.ValidationFailure> errors;
+            if (e.GetType() == typeof(ValidationException))
+            {
+                message = e.Message;
+                errors = ((IEnumerable<ValidationFailure>)(ValidationException)e);
 
+                httpContext.Response.StatusCode = 400;
 
-				httpContext.Response.StatusCode = 400;
+                return httpContext.Response.WriteAsync(new ValidationErrorDetails
+                {
+                    StatusCode = 400,
+                    Message = message,
+                    Errors = errors
+                }.ToString());
+            }
 
-				return httpContext.Response.WriteAsync(new ValidationErrorDetails
-				{
-					StatusCode = 400,
-					Message = message,
-					Errors = errors
-				}.ToString());
-
-			}
-
-			return httpContext.Response.WriteAsync(new ErrorDetails
-			{
-				StatusCode = httpContext.Response.StatusCode,
-				Message = message
-			}.ToString());
-		}
-	}
+            return httpContext.Response.WriteAsync(new ErrorDetails
+            {
+                StatusCode = httpContext.Response.StatusCode,
+                Message = message
+            }.ToString());
+        }
+    }
 }

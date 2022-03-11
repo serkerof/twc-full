@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Business.Abstract;
+﻿using Business.Abstract;
 using Business.Constants;
 using Core.Utilities.Results;
-using Core.DataAccess.Abstract;
 using DataAccess.Abstract;
 using Entities.Concrete;
 
 namespace Business.Concrete
 {
-    public class EmailManager:IEmailService
+    public class EmailManager : IEmailService
     {
         private IEmailDal _emailDal;
 
@@ -42,7 +36,6 @@ namespace Business.Concrete
         public IDataResult<Email> Get(int id)
         {
             return new SuccessDataResult<Email>(_emailDal.Get(filter: x => x.ID == id));
-
         }
 
         public IDataResult<List<Email>> GetList()

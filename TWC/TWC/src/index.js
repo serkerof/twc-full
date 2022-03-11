@@ -9,12 +9,8 @@ import 'animate.css/animate.min.css';
 import 'animate.css';
 import './index.css';
 
-
-
-inject(ReactDOM,App,Provider,BrowserRouter,store);
-
+inject(ReactDOM, App, Provider, BrowserRouter, store);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-

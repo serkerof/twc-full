@@ -12,12 +12,10 @@ import topicImage4 from './assets/img/satisvemarketing/topic-4.png';
 import topicImage5 from './assets/img/satisvemarketing/topic-5.png';
 import topicImage6 from './assets/img/satisvemarketing/topic-6.png';
 
-
-
 const ServicesSalesAndMarketing = () => {
     return (
         <div>
-            <ServicesHeaderDash img={salesImg} isBlack={true}  textStructure={'Satış və marketing'} textStructureData={'Sales and marketing'} />
+            <ServicesHeaderDash img={salesImg} isBlack={true} textStructure={'Satış və marketing'} textStructureData={'Sales and marketing'} />
             <div className={`${styles.container}`}>
                 <section className={`${styles.header_section} d-flex`}>
                     <div

@@ -13,4 +13,10 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d50342b5_002Dce79_002D4ca7_002D96e0_002D7df97c463a0c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:Boolean x:Key="/Default/Housekeeping/ExtensionManager/IncludePrereleasePackages/@EntryValue">True</s:Boolean></wpf:ResourceDictionary>
+	<s:Boolean x:Key="/Default/Housekeeping/ExtensionManager/IncludePrereleasePackages/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/RunConfigs/Active/@EntryValue">B8AA1CEFAF048F40A74B356AFAE6DBA1</s:String>
+	<s:Boolean x:Key="/Default/RunConfigs/Config/=B8AA1CEFAF048F40A74B356AFAE6DBA1/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/RunConfigs/Config/=B8AA1CEFAF048F40A74B356AFAE6DBA1/DefaultAction/@EntryValue">run</s:String>
+	<s:String x:Key="/Default/RunConfigs/Config/=B8AA1CEFAF048F40A74B356AFAE6DBA1/Name/@EntryValue">TWC</s:String>
+	<s:String x:Key="/Default/RunConfigs/Config/=B8AA1CEFAF048F40A74B356AFAE6DBA1/ProjectGuid/@EntryValue">41A89FA4EF5A254AAB25521C95AB171C</s:String>
+	<s:String x:Key="/Default/RunConfigs/Config/=B8AA1CEFAF048F40A74B356AFAE6DBA1/Type/@EntryValue">project</s:String></wpf:ResourceDictionary>

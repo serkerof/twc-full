@@ -15,13 +15,12 @@ import topicImage6 from './assets/img/bazararastirmasi/topic-6.png';
 import topicImage7 from './assets/img/bazararastirmasi/topic-7.png';
 import topicImage8 from './assets/img/bazararastirmasi/topic-8.png';
 
-
 const ServicesMarketResearch = () => {
     return (
         <div>
-            <ServicesHeaderDash 
-                img={headerImage} 
-                isBlack={false} 
+            <ServicesHeaderDash
+                img={headerImage}
+                isBlack={false}
                 textStructure={'Bazar araşdırması'}
                 textStructureData={'Market research'}
             />

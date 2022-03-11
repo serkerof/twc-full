@@ -1,5 +1,5 @@
-using Entities.Concrete;
 using Core.Entities.Abstract;
+using Entities.Concrete;
 
 namespace Entities.Dto
 {
@@ -9,6 +9,5 @@ namespace Entities.Dto
         public string Name { get; set; }
         public string Surname { get; set; }
         public Email Email { get; set; }
-
     }
 }

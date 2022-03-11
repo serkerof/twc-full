@@ -1,6 +1,5 @@
-﻿using Entities.Concrete;
-using Business.Abstract;
-using Microsoft.AspNetCore.Http;
+﻿using Business.Abstract;
+using Entities.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TWC_BACK_END.Controllers
@@ -10,7 +9,6 @@ namespace TWC_BACK_END.Controllers
     public class AdminsController : ControllerBase
     {
         private IAdminService _adminService;
-
 
         public AdminsController(IAdminService adminService)
         {
@@ -71,6 +69,5 @@ namespace TWC_BACK_END.Controllers
             }
             return BadRequest(result.Message);
         }
-
     }
 }

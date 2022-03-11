@@ -10,7 +10,6 @@ import groupItemImagePng1 from './assets/img/senayemehsullari-group-item-3.png';
 import groupItemImagePng2 from './assets/img/senayemehsullari-group-item-3.png';
 import groupItemImagePng3 from './assets/img/senayemehsullari-group-item-3.png';
 
-
 const IndustryProducts = () => {
     return (
         <div>

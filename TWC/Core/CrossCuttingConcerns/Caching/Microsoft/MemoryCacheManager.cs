@@ -1,18 +1,14 @@
 ﻿using Core.Utilities.IoC;
 using Microsoft.Extensions.Caching.Memory;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Microsoft.Extensions.DependencyInjection;
 using System.Text.RegularExpressions;
-using System.Linq;
 
 namespace Core.CrossCuttingConcerns.Caching.Microsoft
 {
     public class MemoryCacheManager : ICacheManager
     {
         //Adapter Pattern
-        IMemoryCache _memoryCache;
+        private IMemoryCache _memoryCache;
 
         public MemoryCacheManager()
         {

@@ -1,5 +1,4 @@
 ﻿using Castle.DynamicProxy;
-using System;
 
 namespace Core.Utilities.Interceptors
 {
@@ -10,8 +9,6 @@ namespace Core.Utilities.Interceptors
 
         public virtual void Intercept(IInvocation invocation)
         {
-
         }
     }
-
 }

@@ -1,6 +1,5 @@
-﻿using Entities.Concrete;
-using Business.Abstract;
-using Microsoft.AspNetCore.Http;
+﻿using Business.Abstract;
+using Entities.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TWC_BACK_END.Controllers
@@ -9,11 +8,7 @@ namespace TWC_BACK_END.Controllers
     [ApiController]
     public class EmailsController : ControllerBase
     {
-
         private IEmailService _emailService;
-    
-        
-        
 
         public EmailsController(IEmailService emailService)
         {

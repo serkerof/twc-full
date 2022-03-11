@@ -6,22 +6,22 @@
     align-items: center;
 }
 
-.our_team_top>p {
-    font-size: 11px;
-    font-weight: 400;
-    letter-spacing: 4px;
-    line-height: 20px;
-    text-align: center;
-}
+    .our_team_top > p {
+        font-size: 11px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        line-height: 20px;
+        text-align: center;
+    }
 
-.our_team_top>h2 {
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 52px;
-    text-align: center;
-}
+    .our_team_top > h2 {
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 52px;
+        text-align: center;
+    }
 
 .carousel_container {
     margin-top: 50px;
@@ -127,15 +127,14 @@
     .team_member_education {
         font-size: 20px;
     }
-
 }
 
 @media screen and (max-width: 767px) {
-    .our_team_top>p {
+    .our_team_top > p {
         font-size: 7px;
     }
 
-    .our_team_top>h2 {
+    .our_team_top > h2 {
         font-size: 22px;
     }
 

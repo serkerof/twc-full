@@ -10,7 +10,6 @@ import topicImage2 from './assets/img/kapitallashma/topic-2.png';
 import topicImage3 from './assets/img/kapitallashma/topic-3.png';
 import topicImage4 from './assets/img/kapitallashma/topic-4.png';
 
-
 const ServicesInvestment = () => {
     return (
         <div>
@@ -149,7 +148,6 @@ const ServicesInvestment = () => {
                         <span className={`${styles.sub_header}`}>
                             KAPİTALLAŞMA
 
-
                         </span>
                         <span className={`${styles.topic_title}`}>
                             Böyümə və modernizasiya maliyyələşməsi{' '}
@@ -172,7 +170,6 @@ const ServicesInvestment = () => {
                     >
                         <span className={`${styles.sub_header}`}>
                             KAPİTALLAŞMA
-
 
                         </span>
                         <span className={`${styles.topic_title}`}>

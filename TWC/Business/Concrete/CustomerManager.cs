@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Business.Abstract;
+﻿using Business.Abstract;
 using Business.Constants;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
@@ -14,7 +9,6 @@ namespace Business.Concrete
 {
     public class CustomerManager : ICustomerService
     {
-
         private ICustomerDal _customerDal;
 
         public CustomerManager(ICustomerDal customerDal)
@@ -40,7 +34,6 @@ namespace Business.Concrete
         public IDataResult<Customer> Get(int id)
         {
             return new SuccessDataResult<Customer>(_customerDal.Get(filter: x => x.ID == id));
-
         }
 
         public IDataResult<List<Customer>> GetList()

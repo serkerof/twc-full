@@ -1,18 +1,14 @@
-﻿
-using Castle.DynamicProxy;
+﻿using Castle.DynamicProxy;
 using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Interceptors;
 using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Core.Aspects.Autofac.Validation
 {
     public class ValidationAspect : MethodInterception //Aspect
     {
         private Type _validatorType;
+
         public ValidationAspect(Type validatorType)
         {
             //defensive coding
@@ -23,6 +19,7 @@ namespace Core.Aspects.Autofac.Validation
 
             _validatorType = validatorType;
         }
+
         protected override void OnBefore(IInvocation invocation)
         {
             var validator = Activator.CreateInstance(_validatorType) as IValidator;
@@ -33,7 +30,5 @@ namespace Core.Aspects.Autofac.Validation
                 ValidationTool.Validate(validator, entity);
             }
         }
-
-
     }
 }

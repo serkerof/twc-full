@@ -16,7 +16,7 @@ import topicImage7 from './assets/img/teshkilati/topic-7.png';
 const ServicesOrganization = () => {
     return (
         <div>
-            <ServicesHeaderDash img={organizationImg} isBlack={true}  textStructure={'Təşkilati'} textStructureData={'Organizational'} />
+            <ServicesHeaderDash img={organizationImg} isBlack={true} textStructure={'Təşkilati'} textStructureData={'Organizational'} />
             <div className={`${styles.container}`}>
                 <section className={`${styles.header_section} d-flex`}>
                     <div

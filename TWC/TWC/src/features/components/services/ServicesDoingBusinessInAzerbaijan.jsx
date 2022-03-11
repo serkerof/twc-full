@@ -11,7 +11,6 @@ import topicImage1 from './assets/img/doingbusinessazerbaijan/topic-1.png';
 import topicImage2 from './assets/img/doingbusinessazerbaijan/topic-2.png';
 import topicImage3 from './assets/img/doingbusinessazerbaijan/topic-3.png';
 
-
 const ServicesDoingBusinessInAzerbaijan = () => {
     return (
         <div>

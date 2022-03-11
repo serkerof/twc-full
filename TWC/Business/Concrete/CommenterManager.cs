@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Business.Abstract;
+﻿using Business.Abstract;
 using Business.Constants;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
@@ -14,9 +9,7 @@ namespace Business.Concrete
 {
     public class CommenterManager : ICommenterService
     {
-
         private ICommenterDal _commenterDal;
-
 
         public CommenterManager(ICommenterDal commenterDal)
         {
@@ -28,12 +21,11 @@ namespace Business.Concrete
             _commenterDal.Add(commenter);
             return new SuccessResult(Messages.Success + commenter.Name);
         }
-      
 
         public IResult Delete(Commenter commenter)
         {
             _commenterDal.Delete(commenter);
-            return new SuccessResult(Messages.Deleted  + commenter.Name);
+            return new SuccessResult(Messages.Deleted + commenter.Name);
         }
 
         public IResult Update(Commenter commenter)
@@ -45,7 +37,6 @@ namespace Business.Concrete
         public IDataResult<Commenter> Get(int id)
         {
             return new SuccessDataResult<Commenter>(_commenterDal.Get(filter: x => x.ID == id));
-
         }
 
         public IDataResult<List<Commenter>> GetList()
@@ -64,4 +55,3 @@ namespace Business.Concrete
         }
     }
 }
-

@@ -9,7 +9,6 @@ import sectionImagePng from './assets/img/transportasiyalogistika-section.png';
 import groupItemImagePng1 from './assets/img/transportasiyalogistika-group-item-1.png';
 import groupItemImagePng2 from './assets/img/transportasiyalogistika-group-item-2.png';
 
-
 const IndustryTransPortationAndLogistics = () => {
     return (
         <div>

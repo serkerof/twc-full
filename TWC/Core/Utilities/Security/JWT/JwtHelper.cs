@@ -1,12 +1,11 @@
 ﻿using Core.Extensions;
 using Core.Utilities.Security.Encryption;
 using Microsoft.Azure.Documents;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using NuGet.Protocol.Plugins;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using Microsoft.Extensions.Configuration;
-using System.Collections.Generic;
 
 namespace Core.Utilities.Security.JWT
 {
@@ -15,13 +14,13 @@ namespace Core.Utilities.Security.JWT
         public Microsoft.Extensions.Configuration.IConfiguration Configuration { get; }
         private TokenOptions _tokenOptions;
         private DateTime _accessTokenExpiration;
+
         public JwtHelper(Microsoft.Extensions.Configuration.IConfiguration configuration)
         {
             Configuration = configuration;
             _tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
-
-
         }
+
         AccessToken ITokenHelper.CreateToken(User user, List<OperationClaim> operationClaims)
         {
             _accessTokenExpiration = DateTime.Now.AddMinutes(_tokenOptions.AccessTokenExpiration);
@@ -36,7 +35,6 @@ namespace Core.Utilities.Security.JWT
                 Token = token,
                 Expiration = _accessTokenExpiration
             };
-
         }
 
         public JwtSecurityToken CreateJwtSecurityToken(TokenOptions tokenOptions, User user,

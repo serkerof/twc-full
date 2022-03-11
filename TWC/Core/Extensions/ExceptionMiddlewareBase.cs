@@ -1,8 +1,4 @@
 ﻿using Microsoft.AspNetCore.Http;
-using System.ComponentModel.DataAnnotations;
-using System.Net;
-using Microsoft.IdentityModel.Tokens;
-using System.Collections.Generic;
 
 namespace Core.Extensions
 {

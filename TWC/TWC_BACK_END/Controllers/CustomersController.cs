@@ -1,6 +1,5 @@
-﻿using Entities.Concrete;
-using Business.Abstract;
-using Microsoft.AspNetCore.Http;
+﻿using Business.Abstract;
+using Entities.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TWC_BACK_END.Controllers
@@ -15,7 +14,6 @@ namespace TWC_BACK_END.Controllers
         {
             _customerService = customerService;
         }
-
 
         [HttpGet("customergetall")]
         public IActionResult GetAll()

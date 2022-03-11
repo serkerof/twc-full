@@ -1,10 +1,4 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Business.Abstract;
+﻿using Business.Abstract;
 using Business.Constants;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
@@ -13,16 +7,15 @@ using NuGet.Protocol.Plugins;
 
 namespace Business.Concrete
 {
-    public class UserManager:IUserService
+    public class UserManager : IUserService
     {
         private IUserDal _userDal;
 
         public UserManager(IUserDal userDal)
         {
             _userDal = userDal;
-
         }
-      
+
         public IResult Add(User user)
         {
             _userDal.Add(user);
@@ -44,7 +37,6 @@ namespace Business.Concrete
         public IDataResult<User> Get(int id)
         {
             return new SuccessDataResult<User>(_userDal.Get(filter: x => x.ID == id));
-
         }
 
         public IDataResult<List<User>> GetList()
@@ -52,30 +44,24 @@ namespace Business.Concrete
             return new SuccessDataResult<List<User>>(_userDal.GetList());
         }
 
-
-
         public IResult CheckPassword(User user, string password)
         {
             if (user.Password != Int32.Parse(password))
             {
                 return new ErrorResult(Messages.NotValidPassword);
             }
-           
+
             return new SuccessResult();
         }
 
         public List<OperationClaim> GetClaims(User user)
         {
-
             throw new NotImplementedException();
         }
 
         public User GetByMail(string email)
         {
-
             throw new NotImplementedException();
-        
         }
     }
-
 }

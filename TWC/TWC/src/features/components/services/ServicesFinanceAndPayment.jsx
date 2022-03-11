@@ -13,7 +13,6 @@ import topicImage5 from './assets/img/strategiyavemaliyye/topic-5.png';
 import topicImage6 from './assets/img/strategiyavemaliyye/topic-6.png';
 import topicImage7 from './assets/img/strategiyavemaliyye/topic-7.png';
 
-
 const ServicesFinanceAndPayment = () => {
     return (
         <div>

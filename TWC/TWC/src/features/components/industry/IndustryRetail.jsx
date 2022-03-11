@@ -13,7 +13,6 @@ import groupItemImagePng2 from './assets/img/retail-group-item-2.png';
 import groupItemImagePng3 from './assets/img/retail-group-item-3.png';
 import footerImage from './assets/img/retail-footer.png';
 
-
 const IndustryRetail = () => {
     return (
         <div>
@@ -116,7 +115,7 @@ const IndustryRetail = () => {
                             oyunçular mövqelərini qorumaqda əziyyət çəkir.
                         </p>
                         <Link to="/ideas/alcohol">
-                        <RoundedButton positioned="15px" color="#17171766" />
+                            <RoundedButton positioned="15px" color="#17171766" />
                         </Link>
                     </div>
                 </div>
