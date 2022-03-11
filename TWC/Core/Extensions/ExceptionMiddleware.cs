@@ -22,7 +22,8 @@ namespace Core.Extensions
             }
             catch (Exception e)
             {
-                await HandleExceptionAsync(httpContext, e).ConfigureAwait(continueOnCapturedContext: false);
+                await HandleExceptionAsync(httpContext, e).ConfigureAwait(false);
+
             }
         }
 

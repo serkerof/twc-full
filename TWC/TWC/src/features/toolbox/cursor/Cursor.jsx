@@ -3,7 +3,7 @@ import AnimatedCursor from 'react-animated-cursor';
 
 const Cursor = () => {
     return (
-        <>
+        <div>
             <AnimatedCursor
                 innerSize={8}
                 outerSize={16}
@@ -12,7 +12,7 @@ const Cursor = () => {
                 innerScale={1.2}
                 outerScale={3}
             />
-        </>
+        </div>
     );
 };
 
