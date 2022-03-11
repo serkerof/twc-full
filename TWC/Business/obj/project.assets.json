@@ -2753,7 +2753,8 @@
           "Entities": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.2",
           "Microsoft.Extensions.Configuration.UserSecrets": "6.0.0",
-          "Node.js.redist": "17.2.0"
+          "Node.js.redist": "17.2.0",
+          "Validation": "2.5.51"
         },
         "compile": {
           "bin/placeholder/DataAccess.dll": {}
@@ -2767,7 +2768,8 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Core": "1.0.0",
-          "Node.js.redist": "17.2.0"
+          "Node.js.redist": "17.2.0",
+          "Validation": "2.5.51"
         },
         "compile": {
           "bin/placeholder/Entities.dll": {}
@@ -9178,7 +9180,8 @@
       "Entities >= 1.0.0",
       "FluentValidation >= 10.3.6",
       "Node.js.redist >= 17.2.0",
-      "NuGet.Protocol >= 6.1.0"
+      "NuGet.Protocol >= 6.1.0",
+      "Validation >= 2.5.51"
     ]
   },
   "packageFolders": {
@@ -9262,6 +9265,10 @@
           "NuGet.Protocol": {
             "target": "Package",
             "version": "[6.1.0, )"
+          },
+          "Validation": {
+            "target": "Package",
+            "version": "[2.5.51, )"
           }
         },
         "imports": [

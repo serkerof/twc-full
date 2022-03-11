@@ -7824,7 +7824,8 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Core >= 1.0.0",
-      "Node.js.redist >= 17.2.0"
+      "Node.js.redist >= 17.2.0",
+      "Validation >= 2.5.51"
     ]
   },
   "packageFolders": {
@@ -7878,6 +7879,10 @@
           "Node.js.redist": {
             "target": "Package",
             "version": "[17.2.0, )"
+          },
+          "Validation": {
+            "target": "Package",
+            "version": "[2.5.51, )"
           }
         },
         "imports": [

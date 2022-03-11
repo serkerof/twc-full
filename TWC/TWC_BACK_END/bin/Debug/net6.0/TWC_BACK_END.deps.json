@@ -15,7 +15,8 @@
           "Microsoft.Extensions.ApiDescription.Client": "3.0.0",
           "NSwag.ApiDescription.Client": "13.0.5",
           "Node.js.redist": "17.2.0",
-          "Swashbuckle.AspNetCore": "6.2.3"
+          "Swashbuckle.AspNetCore": "6.2.3",
+          "Validation": "2.5.51"
         },
         "runtime": {
           "TWC_BACK_END.dll": {}
@@ -2061,7 +2062,8 @@
           "Entities": "1.0.0",
           "FluentValidation": "10.3.6",
           "Node.js.redist": "17.2.0",
-          "NuGet.Protocol": "6.1.0"
+          "NuGet.Protocol": "6.1.0",
+          "Validation": "2.5.51"
         },
         "runtime": {
           "Business.dll": {}
@@ -2099,7 +2101,8 @@
           "Entities": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.2",
           "Microsoft.Extensions.Configuration.UserSecrets": "6.0.0",
-          "Node.js.redist": "17.2.0"
+          "Node.js.redist": "17.2.0",
+          "Validation": "2.5.51"
         },
         "runtime": {
           "DataAccess.dll": {}
@@ -2108,7 +2111,8 @@
       "Entities/1.0.0": {
         "dependencies": {
           "Core": "1.0.0",
-          "Node.js.redist": "17.2.0"
+          "Node.js.redist": "17.2.0",
+          "Validation": "2.5.51"
         },
         "runtime": {
           "Entities.dll": {}

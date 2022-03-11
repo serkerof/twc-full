@@ -1,3 +1,5 @@
+C:\Users\info\Desktop\deps\TWC\Entities\bin\Debug\net6.0\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\Users\info\Desktop\deps\TWC\Entities\bin\Debug\net6.0\Cosmos.CRTCompat.dll
 C:\Users\info\Desktop\deps\TWC\Entities\bin\Debug\net6.0\Entities.deps.json
 C:\Users\info\Desktop\deps\TWC\Entities\bin\Debug\net6.0\Entities.dll
 C:\Users\info\Desktop\deps\TWC\Entities\bin\Debug\net6.0\Entities.pdb
@@ -13,5 +15,3 @@ C:\Users\info\Desktop\deps\TWC\Entities\obj\Debug\net6.0\Entities.dll
 C:\Users\info\Desktop\deps\TWC\Entities\obj\Debug\net6.0\refint\Entities.dll
 C:\Users\info\Desktop\deps\TWC\Entities\obj\Debug\net6.0\Entities.pdb
 C:\Users\info\Desktop\deps\TWC\Entities\obj\Debug\net6.0\ref\Entities.dll
-C:\Users\info\Desktop\deps\TWC\Entities\bin\Debug\net6.0\Microsoft.Azure.Documents.ServiceInterop.dll
-C:\Users\info\Desktop\deps\TWC\Entities\bin\Debug\net6.0\Cosmos.CRTCompat.dll
