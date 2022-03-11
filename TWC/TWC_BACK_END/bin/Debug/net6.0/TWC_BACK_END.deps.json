@@ -10,12 +10,10 @@
         "dependencies": {
           "Autofac.Extensions.DependencyInjection": "7.2.0",
           "Business": "1.0.0",
-          "DataAccess": "1.0.0",
           "Microsoft.ApplicationInsights.AspNetCore": "2.15.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.3",
           "Microsoft.Extensions.ApiDescription.Client": "3.0.0",
           "NSwag.ApiDescription.Client": "13.0.5",
-          "Newtonsoft.Json": "13.0.1",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
