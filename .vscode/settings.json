@@ -1,6 +1,0 @@
-{
-    /*code test configuration*/
-    "files.associations": {
-        "*.code-test.json": "jsonc",
-    },
-}
