@@ -17,7 +17,7 @@
 	
 	<s:Boolean x:Key="/Default/Housekeeping/CodeStructure/SynchronizeViewToCaret/@EntryValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/Housekeeping/ExtensionManager/IncludePrereleasePackages/@EntryValue">True</s:Boolean>
-	<s:String x:Key="/Default/RunConfigs/Active/@EntryValue">B8AA1CEFAF048F40A74B356AFAE6DBA1</s:String>
+	
 	<s:Boolean x:Key="/Default/RunConfigs/Config/=B8AA1CEFAF048F40A74B356AFAE6DBA1/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/RunConfigs/Config/=B8AA1CEFAF048F40A74B356AFAE6DBA1/DefaultAction/@EntryValue">run</s:String>
 	<s:String x:Key="/Default/RunConfigs/Config/=B8AA1CEFAF048F40A74B356AFAE6DBA1/Name/@EntryValue">TWC</s:String>
