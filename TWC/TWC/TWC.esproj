@@ -1,5 +1,5 @@
-<Project>
-  <Sdk>Microsoft.VisualStudio.JavaScript.Sdk/0.4.0-alpha</Sdk>
+
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.4.0-alpha">
   <PropertyGroup Label="Globals">
     <ProjectGuid>a49fa841-5aef-4a25-ab25-521c95ab171c</ProjectGuid>
   </PropertyGroup>
@@ -13,6 +13,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\app\" />
+    <Folder Include="src\features\" />
   </ItemGroup>
   <!-- This target is copied from the ASP.NET SPA template in order to ensure node_modules are in place. -->
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
