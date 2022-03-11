@@ -8,6 +8,7 @@
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <UserSecretsId>8e799226-42fc-4a48-a71b-4285f45f94a0</UserSecretsId>
     <DebugType>embedded</DebugType>
+    <SonarQubeExclude>True</SonarQubeExclude>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
