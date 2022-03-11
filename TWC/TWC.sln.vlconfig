@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Solution ProductName="Visual Lint Professional Edition (trial)" ProductVersion="8.0">
+<Solution ProductName="Visual Lint Enterprise Edition (trial)" ProductVersion="8.0">
 	<AnalysisConfiguration>
 		<AnalysisToolName Source="Default"/>
 		<AnalysisToolFolder Source="Default"/>
@@ -7,6 +7,7 @@
 		<Configuration Source="Default"/>
 		<AnalysisMethod Source="Default"/>
 		<AdditionalParameters Source="Default"/>
+		<AnalysisPostProcessor Enable="0" FileName=""/>
 		<AnalysisTools/>
 		<Reports>
 			<Location Source="Default"/>
