@@ -12,5 +12,76 @@
 			<Location Source="Default"/>
 		</Reports>
 	</AnalysisConfiguration>
-	<Projects/>
+	<Projects>
+		<Project Name="Business.csproj" Analyse="1">
+			<AnalysisConfiguration>
+				<AnalysisToolFolder Source="Default"/>
+				<AnalysisToolPathName Source="Default"/>
+				<AnalysisMethod Source="Default"/>
+				<AdditionalParameters Source="Default"/>
+				<AnalysisTools>
+					<AnalysisTool Name="PC-lint/PC-lint Plus">
+						<Property Name="UseGeneratedIndirectFiles" Value="1"/>
+					</AnalysisTool>
+				</AnalysisTools>
+			</AnalysisConfiguration>
+			<Files/>
+		</Project>
+		<Project Name="Core.csproj" Analyse="1">
+			<AnalysisConfiguration>
+				<AnalysisToolFolder Source="Default"/>
+				<AnalysisToolPathName Source="Default"/>
+				<AnalysisMethod Source="Default"/>
+				<AdditionalParameters Source="Default"/>
+				<AnalysisTools>
+					<AnalysisTool Name="PC-lint/PC-lint Plus">
+						<Property Name="UseGeneratedIndirectFiles" Value="1"/>
+					</AnalysisTool>
+				</AnalysisTools>
+			</AnalysisConfiguration>
+			<Files/>
+		</Project>
+		<Project Name="DataAccess.csproj" Analyse="1">
+			<AnalysisConfiguration>
+				<AnalysisToolFolder Source="Default"/>
+				<AnalysisToolPathName Source="Default"/>
+				<AnalysisMethod Source="Default"/>
+				<AdditionalParameters Source="Default"/>
+				<AnalysisTools>
+					<AnalysisTool Name="PC-lint/PC-lint Plus">
+						<Property Name="UseGeneratedIndirectFiles" Value="1"/>
+					</AnalysisTool>
+				</AnalysisTools>
+			</AnalysisConfiguration>
+			<Files/>
+		</Project>
+		<Project Name="Entities.csproj" Analyse="1">
+			<AnalysisConfiguration>
+				<AnalysisToolFolder Source="Default"/>
+				<AnalysisToolPathName Source="Default"/>
+				<AnalysisMethod Source="Default"/>
+				<AdditionalParameters Source="Default"/>
+				<AnalysisTools>
+					<AnalysisTool Name="PC-lint/PC-lint Plus">
+						<Property Name="UseGeneratedIndirectFiles" Value="1"/>
+					</AnalysisTool>
+				</AnalysisTools>
+			</AnalysisConfiguration>
+			<Files/>
+		</Project>
+		<Project Name="TWC_BACK_END.csproj" Analyse="1">
+			<AnalysisConfiguration>
+				<AnalysisToolFolder Source="Default"/>
+				<AnalysisToolPathName Source="Default"/>
+				<AnalysisMethod Source="Default"/>
+				<AdditionalParameters Source="Custom" Parameters=""/>
+				<AnalysisTools>
+					<AnalysisTool Name="PC-lint/PC-lint Plus">
+						<Property Name="UseGeneratedIndirectFiles" Value="1"/>
+					</AnalysisTool>
+				</AnalysisTools>
+			</AnalysisConfiguration>
+			<Files/>
+		</Project>
+	</Projects>
 </Solution>

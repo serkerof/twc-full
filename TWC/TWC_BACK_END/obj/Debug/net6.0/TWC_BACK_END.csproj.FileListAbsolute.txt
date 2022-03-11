@@ -100,3 +100,4 @@ C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\obj\Debug\net6.0\TWC_BACK_END.dll
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\obj\Debug\net6.0\refint\TWC_BACK_END.dll
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\obj\Debug\net6.0\TWC_BACK_END.genruntimeconfig.cache
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\obj\Debug\net6.0\ref\TWC_BACK_END.dll
+C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\bin\Debug\net6.0\libman.json
