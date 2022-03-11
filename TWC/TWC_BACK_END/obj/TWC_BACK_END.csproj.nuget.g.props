@@ -23,5 +23,6 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\info\.nuget\packages\microsoft.extensions.apidescription.server\3.0.0</PkgMicrosoft_Extensions_ApiDescription_Server>
     <PkgNSwag_MSBuild Condition=" '$(PkgNSwag_MSBuild)' == '' ">C:\Users\info\.nuget\packages\nswag.msbuild\13.0.5</PkgNSwag_MSBuild>
+    <PkgNode_js_redist Condition=" '$(PkgNode_js_redist)' == '' ">C:\Users\info\.nuget\packages\node.js.redist\17.2.0</PkgNode_js_redist>
   </PropertyGroup>
 </Project>

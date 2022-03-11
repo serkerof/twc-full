@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uKaXwTJvEBeESgXGry5J0KmmQu7t8sk6KoX4tiJHTLJ9zR0sGBZZSvkWfp/7RtkfbK/aH9ofgTS3wpiDm3szLw==",
+  "dgSpecHash": "xfzqRCM1yJiYliYtYCWnYPu36dQdwNc0yZNnq1NwqM9nb/k7bHjkAHP8ShoFjW7nGAdQdzE3I4ArXTZiXAXZQQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\info\\Desktop\\deps\\TWC\\Business\\Business.csproj",
   "expectedPackageFiles": [
@@ -52,6 +52,7 @@
     "C:\\Users\\info\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\info\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\info\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\info\\.nuget\\packages\\node.js.redist\\17.2.0\\node.js.redist.17.2.0.nupkg.sha512",
     "C:\\Users\\info\\.nuget\\packages\\nuget.common\\6.1.0\\nuget.common.6.1.0.nupkg.sha512",
     "C:\\Users\\info\\.nuget\\packages\\nuget.configuration\\6.1.0\\nuget.configuration.6.1.0.nupkg.sha512",
     "C:\\Users\\info\\.nuget\\packages\\nuget.frameworks\\6.1.0\\nuget.frameworks.6.1.0.nupkg.sha512",

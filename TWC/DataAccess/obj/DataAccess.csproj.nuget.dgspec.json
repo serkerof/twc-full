@@ -84,6 +84,10 @@
               "target": "Package",
               "version": "[6.16.0, )"
             },
+            "Node.js.redist": {
+              "target": "Package",
+              "version": "[17.2.0, )"
+            },
             "NuGet.Protocol": {
               "target": "Package",
               "version": "[6.1.0, )"
@@ -190,6 +194,10 @@
             "Microsoft.Extensions.Configuration.UserSecrets": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "Node.js.redist": {
+              "target": "Package",
+              "version": "[17.2.0, )"
             }
           },
           "imports": [
@@ -254,6 +262,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Node.js.redist": {
+              "target": "Package",
+              "version": "[17.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

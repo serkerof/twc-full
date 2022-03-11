@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "j4NW0c+O+3cO9kB7Cn0FrG1Och3TCdVm54umaPIsgVatn5ADqlcJy1pNVi62wyQnIq5pYg/EXFly7fy2bLLdpg==",
+  "dgSpecHash": "2+GvUNwdwcpuXVXAyXoo32TUPGKP2e5GvdKEXjKaSDcNJVpFPLA6xRTZPeZ/uQHHJdnUVUN3eOYsv2MMwm1PDw==",
   "success": true,
   "projectFilePath": "C:\\Users\\info\\Desktop\\deps\\TWC\\TWC_BACK_END\\TWC_BACK_END.csproj",
   "expectedPackageFiles": [
@@ -78,6 +78,7 @@
     "C:\\Users\\info\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\info\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\info\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\info\\.nuget\\packages\\node.js.redist\\17.2.0\\node.js.redist.17.2.0.nupkg.sha512",
     "C:\\Users\\info\\.nuget\\packages\\nswag.apidescription.client\\13.0.5\\nswag.apidescription.client.13.0.5.nupkg.sha512",
     "C:\\Users\\info\\.nuget\\packages\\nswag.msbuild\\13.0.5\\nswag.msbuild.13.0.5.nupkg.sha512",
     "C:\\Users\\info\\.nuget\\packages\\nuget.common\\6.1.0\\nuget.common.6.1.0.nupkg.sha512",
