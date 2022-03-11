@@ -9,7 +9,8 @@
       "Entities/1.0.0": {
         "dependencies": {
           "Core": "1.0.0",
-          "Node.js.redist": "17.2.0"
+          "Node.js.redist": "17.2.0",
+          "Validation": "2.5.51"
         },
         "runtime": {
           "Entities.dll": {}

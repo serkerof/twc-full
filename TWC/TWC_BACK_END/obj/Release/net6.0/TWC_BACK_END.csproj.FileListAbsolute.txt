@@ -1,6 +1,7 @@
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\bin\Release\net6.0\Microsoft.Azure.Documents.ServiceInterop.dll
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\bin\Release\net6.0\Cosmos.CRTCompat.dll
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\bin\Release\net6.0\appsettings.Development.json
+C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\bin\Release\net6.0\libman.json
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\bin\Release\net6.0\TWC_BACK_END.exe
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\bin\Release\net6.0\TWC_BACK_END.deps.json
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\bin\Release\net6.0\TWC_BACK_END.runtimeconfig.json
@@ -82,8 +83,8 @@ C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\bin\Release\net6.0\Core.dll
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\bin\Release\net6.0\DataAccess.dll
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\bin\Release\net6.0\Entities.dll
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\bin\Release\net6.0\Business.pdb
-C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\bin\Release\net6.0\DataAccess.pdb
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\bin\Release\net6.0\Core.pdb
+C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\bin\Release\net6.0\DataAccess.pdb
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\bin\Release\net6.0\Entities.pdb
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\obj\Release\net6.0\TWC_BACK_END.csproj.AssemblyReference.cache
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\obj\Release\net6.0\TWC_BACK_END.GeneratedMSBuildEditorConfig.editorconfig
@@ -100,4 +101,3 @@ C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\obj\Release\net6.0\TWC_BACK_END.dll
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\obj\Release\net6.0\refint\TWC_BACK_END.dll
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\obj\Release\net6.0\TWC_BACK_END.genruntimeconfig.cache
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\obj\Release\net6.0\ref\TWC_BACK_END.dll
-C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\bin\Release\net6.0\libman.json
