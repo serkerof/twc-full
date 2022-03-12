@@ -11,6 +11,7 @@
     <Script Include="**" Exclude="*.esproj;**\node_modules\**" />
   </ItemGroup>
   <ItemGroup>
+    <Script Remove=".env.development.local" />
     <Script Remove="nuget.config" />
   </ItemGroup>
   <ItemGroup>

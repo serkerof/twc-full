@@ -1,4 +1,3 @@
-"use strict";
 // @ts-nocheck
 // This script sets up HTTPS for the application using the ASP.NET Core HTTPS certificate
 const fs = require('fs');

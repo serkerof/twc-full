@@ -7,7 +7,7 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/GeneratedFilesAndFolders/=FEAB9695_002D34A3_002D438E_002DA4F3_002D431C3F5C6F24/@EntryIndexedValue">FEAB9695-34A3-438E-A4F3-431C3F5C6F24</s:String>
 	<s:String x:Key="/Default/CodeInspection/Highlighting/AnalysisEnabled/@EntryValue">SOLUTION</s:String>
 	<s:String x:Key="/Default/CodeInspection/Highlighting/SweaWarningsMode/@EntryValue">ShowAndRun</s:String>
-	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\info\AppData\Local\Temp\JetBrains\ReSharperPlatformVs17\vAny_1391f2aa\CoverageData\_TWC.157901403\Snapshot\snapshot.utdcvr</s:String>
+	
 	
 	
 	
@@ -20,6 +20,7 @@
 	
 	<s:Boolean x:Key="/Default/Housekeeping/CodeStructure/SynchronizeViewToCaret/@EntryValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/Housekeeping/ExtensionManager/IncludePrereleasePackages/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/RunConfigs/Active/@EntryValue">B8AA1CEFAF048F40A74B356AFAE6DBA1</s:String>
 	
 	<s:Boolean x:Key="/Default/RunConfigs/Config/=B8AA1CEFAF048F40A74B356AFAE6DBA1/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/RunConfigs/Config/=B8AA1CEFAF048F40A74B356AFAE6DBA1/DefaultAction/@EntryValue">run</s:String>

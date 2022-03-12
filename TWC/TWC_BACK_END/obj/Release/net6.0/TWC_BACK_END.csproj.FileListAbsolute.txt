@@ -101,3 +101,5 @@ C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\obj\Release\net6.0\TWC_BACK_END.dll
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\obj\Release\net6.0\refint\TWC_BACK_END.dll
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\obj\Release\net6.0\TWC_BACK_END.genruntimeconfig.cache
 C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\obj\Release\net6.0\ref\TWC_BACK_END.dll
+C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\bin\Release\net6.0\web.config
+C:\Users\info\Desktop\deps\TWC\TWC_BACK_END\bin\Release\net6.0\Properties\launchSettings.json
