@@ -1,4 +1,4 @@
-﻿using Core.DependencyResolvers;
+using Core.DependencyResolvers;
 using Core.Extensions;
 using Core.Utilities.IoC;
 using Core.Utilities.Security.Encryption;
@@ -49,31 +49,6 @@ namespace TWC_BACK_END
                new CoreModule()
             });
             services.AddApplicationInsightsTelemetry();
-        }
-
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            app.ConfigureCustomExceptionMiddleware();
-
-            app.UseCors(builder => builder.WithOrigins("http://localhost:3000").AllowAnyHeader());
-
-            app.UseHttpsRedirection();
-
-            app.UseRouting();
-
-            app.UseAuthentication();
-
-            app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
         }
     }
 }
