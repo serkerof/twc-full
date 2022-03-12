@@ -15,7 +15,7 @@ namespace TWC_BACK_END.Controllers
             _userService = userService;
         }
 
-        [HttpGet("usergetall")]
+        [HttpGet("getallusers")]
         public IActionResult GetAll()
         {
             var result = _userService.GetList();
@@ -26,7 +26,7 @@ namespace TWC_BACK_END.Controllers
             return BadRequest(result.Message);
         }
 
-        [HttpGet($"usergetbyid")]
+        [HttpGet($"getuserbyid")]
         public IActionResult GetUserById(int id)
         {
             var result = _userService.Get(id);
@@ -37,7 +37,7 @@ namespace TWC_BACK_END.Controllers
             return BadRequest(result.Message);
         }
 
-        [HttpPost("adduser")]
+        [HttpPost("addusers")]
         public IActionResult AddUser(User user)
         {
             var result = _userService.Add(user);
@@ -48,7 +48,7 @@ namespace TWC_BACK_END.Controllers
             return BadRequest(result.Message);
         }
 
-        [HttpPut("updateuser")]
+        [HttpPut("updatepassword")]
         public IActionResult UpdateUser(User user)
         {
             var result = _userService.Update(user);
@@ -59,7 +59,7 @@ namespace TWC_BACK_END.Controllers
             return BadRequest(result.Message);
         }
 
-        [HttpDelete("deleteuser")]
+        [HttpDelete("deleteusers")]
         public IActionResult DeleteUser(User user)
         {
             var result = _userService.Delete(user);

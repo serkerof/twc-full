@@ -8,11 +8,15 @@ namespace Core.DependencyResolvers
 {
     public class CoreModule : ICoreModule
     {
+        #region Public Methods
+
         public void Load(IServiceCollection serviceCollection)
         {
             serviceCollection.AddMemoryCache();
             serviceCollection.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             serviceCollection.AddSingleton<ICacheManager, MemoryCacheManager>();
         }
+
+        #endregion Public Methods
     }
 }

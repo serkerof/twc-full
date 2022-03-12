@@ -7,6 +7,25 @@ const adapterCreator = () => {
     };
 };
 
+export const fetchArticles = createAsyncThunk('articles/fetchArticles', async () => {
+    try {
+        let request = await fetch('api/getarticles')
+        return await request.json()
+    }
+    catch (error) {
+        return error
+    }
+})
+
+export const fetchArticleById = createAsyncThunk('articles/fetchArticleById', async (articleID) => {
+    try {
+        let request = await fetch(`/api/getarticle${articleID}`)
+        return await request.json()
+    } catch (error) {
+        return error
+    }
+})
+
 const articlesAdapter = createEntityAdapter(adapterCreator());
 
 const initialState = {
@@ -47,8 +66,7 @@ const initialState = {
             ids5: {
                 id: 'ids5',
                 name: 'MALIYYƏ',
-                description:
-                    'Söhbət şirkətlərin özlərini maliyyələşdirməsindən gedirsə, cavab sadəcə faiz dərəcələrindən asılı deyil',
+                description: 'Söhbət şirkətlərin özlərini maliyyələşdirməsindən gedirsə, cavab sadəcə faiz dərəcələrindən asılı deyil',
                 date: new Date(2022, 0, 18).toISOString(),
                 author: 'Anar İsmayılov',
             }

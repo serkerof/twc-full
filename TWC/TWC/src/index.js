@@ -9,6 +9,8 @@ import 'animate.css/animate.min.css';
 import 'animate.css';
 import './index.css';
 
+store.dispatch();
+
 inject(ReactDOM, App, Provider, BrowserRouter, store);
 
 // If you want to start measuring performance in your app, pass a function

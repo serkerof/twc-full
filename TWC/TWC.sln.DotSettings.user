@@ -9,6 +9,7 @@
 	<s:String x:Key="/Default/CodeInspection/Highlighting/SweaWarningsMode/@EntryValue">ShowAndRun</s:String>
 	<s:Boolean x:Key="/Default/Environment/Hierarchy/Build/SolBuilderDuo/RunBuildOnSolutionLoaded/@EntryValue">True</s:Boolean>
 	<s:String x:Key="/Default/Environment/Hierarchy/Build/SolBuilderDuo/UseMsbuildSolutionBuilder/@EntryValue">NewVersion</s:String>
+	
 	<s:String x:Key="/Default/Environment/Hierarchy/TeamCityVsAddinHierarchy/LocalChangesView/GroupingMode/@EntryValue">Flat</s:String>
 	
 	
@@ -23,7 +24,12 @@
 	
 	<s:Boolean x:Key="/Default/Housekeeping/CodeStructure/SynchronizeViewToCaret/@EntryValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/Housekeeping/ExtensionManager/IncludePrereleasePackages/@EntryValue">True</s:Boolean>
-	<s:String x:Key="/Default/RunConfigs/Active/@EntryValue">ED8E5D22D035E549A2265BB74FE6D2C3</s:String>
+	<s:String x:Key="/Default/RunConfigs/Active/@EntryValue">8CF1878820596245843803BBD5079ACA</s:String>
+	<s:Boolean x:Key="/Default/RunConfigs/Config/=8CF1878820596245843803BBD5079ACA/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/RunConfigs/Config/=8CF1878820596245843803BBD5079ACA/DefaultAction/@EntryValue">run</s:String>
+	<s:String x:Key="/Default/RunConfigs/Config/=8CF1878820596245843803BBD5079ACA/Name/@EntryValue">asd</s:String>
+	<s:String x:Key="/Default/RunConfigs/Config/=8CF1878820596245843803BBD5079ACA/ProjectGuid/@EntryValue">41A89FA4EF5A254AAB25521C95AB171C</s:String>
+	<s:String x:Key="/Default/RunConfigs/Config/=8CF1878820596245843803BBD5079ACA/Type/@EntryValue">project</s:String>
 	
 	
 	<s:Boolean x:Key="/Default/RunConfigs/Config/=B8AA1CEFAF048F40A74B356AFAE6DBA1/@KeyIndexDefined">True</s:Boolean>

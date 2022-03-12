@@ -88,22 +88,26 @@ const sliceInvoker = () => {
         reducers: {},
         extraReducers: {
             [fetchMembers.fulfilled]: (state, action) => {
-                state.members = aboutAdapter.upsertMany(state.members, action.payload)
+                state.status = 'succeeded';
+                aboutAdapter.setAll(state, action.payload);
             },
             [fetchMembers.rejected]: (state, action) => {
-                state.error = action.payload.error.message
+                state.error = action.payload.error.message;
+                state.status = 'failed';
             },
             [fetchMembers.pending]: (state, action) => {
-                state.status = 'pending'
+                state.status = 'loading'
             },
             [addMember.fulfilled]: (state, action) => {
-                state.members = aboutAdapter.addOne(state.members, action.payload)
+                state.status = 'succeeded';
+                aboutAdapter.addOne(state, action.payload)
             },
             [addMember.rejected]: (state, action) => {
+                state.status = 'failed';
                 state.error = action.payload.error.message
             },
             [addMember.pending]: (state, action) => {
-                state.status = 'pending'
+                state.status = 'loading'
             }
         }
     }

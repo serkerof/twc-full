@@ -18,17 +18,18 @@ const SignUp = () => {
     const [checked, setChecked] = useState(false);
     const isDisable = [email, password].every(Boolean);
 
-    const handleSubmit = () => {
-        if (!email || !password) {
-            setEmail('');
-            setPassword('');
-            setError('Please fill all fields');
-        } else if (!checked) {
-            setError('Please accept terms and conditions');
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const user = users.find(u => u.email === email);
+        if (user) {
+            setError(`${email} artıq qeydiyyatdan keçmişdir`);
+            setEmail('')
         } else {
-            setEmail('');
-            setPassword('');
+            setError('');
+            setChecked(true);
         }
+
+        setTimeout(() => setError(''), 2500)
     };
 
     return (
@@ -51,7 +52,7 @@ const SignUp = () => {
                         {/* !INPUT EMAIL VERIFICATION */}
                         <input
                             type="email"
-                            placeholder="Email ünvanınızı daxil edin"
+                            placeholder={error && error.length > 0 ? error : "Email ünvanınızı daxil edin"}
                             required
                             id="email"
                             name="email"

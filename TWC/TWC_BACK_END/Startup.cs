@@ -1,4 +1,4 @@
-using Core.DependencyResolvers;
+﻿using Core.DependencyResolvers;
 using Core.Extensions;
 using Core.Utilities.IoC;
 using Core.Utilities.Security.Encryption;
@@ -10,12 +10,41 @@ namespace TWC_BACK_END
 {
     public class Startup
     {
+        #region Public Constructors
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
 
+        #endregion Public Constructors
+
         public IConfiguration Configuration { get; }
+
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            app.ConfigureCustomExceptionMiddleware();
+
+            app.UseCors(builder => builder.WithOrigins("https://localhost:7271").AllowAnyHeader());
+
+            app.UseHttpsRedirection();
+
+            app.UseRouting();
+
+            app.UseAuthentication();
+
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
+        }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)

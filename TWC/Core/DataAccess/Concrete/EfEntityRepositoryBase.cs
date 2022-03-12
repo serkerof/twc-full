@@ -9,6 +9,8 @@ namespace Core.DataAccess.Concrete
     where TContext : DbContext, new()
 
     {
+        #region Public Methods
+
         public void Add(TEntity entity)
         {
             using (TContext context = new TContext())
@@ -54,5 +56,7 @@ namespace Core.DataAccess.Concrete
                 context.SaveChanges();
             }
         }
+
+        #endregion Public Methods
     }
 }

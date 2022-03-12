@@ -5,6 +5,8 @@ namespace Core.Extensions
 {
     public static class ClaimExtensions
     {
+        #region Public Methods
+
         public static void AddEmail(this ICollection<Claim> claims, string email)
         {
             claims.Add(new Claim(JwtRegisteredClaimNames.Email, email));
@@ -24,5 +26,7 @@ namespace Core.Extensions
         {
             roles.ToList().ForEach(role => claims.Add(new Claim(ClaimTypes.Role, role)));
         }
+
+        #endregion Public Methods
     }
 }

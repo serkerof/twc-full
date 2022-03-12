@@ -7,6 +7,7 @@ import servicesReducer from './../features/components/services/servicesSlice';
 import aboutReducer from './../features/components/about/aboutSlice';
 import testimonialsReducer from './../features/components/testimonials/testimonialsSlice';
 import articlesReducer from './../features/components/articles/articlesSlice';
+import emailsReducer from "./../features/components/form/emailsSlice";
 
 const rootReducer = {
     navigation: navigationReducer,
@@ -17,7 +18,8 @@ const rootReducer = {
     services: servicesReducer,
     about: aboutReducer,
     testimonials: testimonialsReducer,
-    articles: articlesReducer
+    articles: articlesReducer,
+    emails: emailsReducer
 };
 
 export default rootReducer
