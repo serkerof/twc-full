@@ -7,6 +7,8 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/GeneratedFilesAndFolders/=FEAB9695_002D34A3_002D438E_002DA4F3_002D431C3F5C6F24/@EntryIndexedValue">FEAB9695-34A3-438E-A4F3-431C3F5C6F24</s:String>
 	<s:String x:Key="/Default/CodeInspection/Highlighting/AnalysisEnabled/@EntryValue">SOLUTION</s:String>
 	<s:String x:Key="/Default/CodeInspection/Highlighting/SweaWarningsMode/@EntryValue">ShowAndRun</s:String>
+	<s:Boolean x:Key="/Default/Environment/Hierarchy/Build/SolBuilderDuo/RunBuildOnSolutionLoaded/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/Hierarchy/Build/SolBuilderDuo/UseMsbuildSolutionBuilder/@EntryValue">NewVersion</s:String>
 	<s:String x:Key="/Default/Environment/Hierarchy/TeamCityVsAddinHierarchy/LocalChangesView/GroupingMode/@EntryValue">Flat</s:String>
 	
 	
@@ -21,10 +23,19 @@
 	
 	<s:Boolean x:Key="/Default/Housekeeping/CodeStructure/SynchronizeViewToCaret/@EntryValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/Housekeeping/ExtensionManager/IncludePrereleasePackages/@EntryValue">True</s:Boolean>
-	<s:String x:Key="/Default/RunConfigs/Active/@EntryValue">B8AA1CEFAF048F40A74B356AFAE6DBA1</s:String>
+	<s:String x:Key="/Default/RunConfigs/Active/@EntryValue">ED8E5D22D035E549A2265BB74FE6D2C3</s:String>
+	
 	
 	<s:Boolean x:Key="/Default/RunConfigs/Config/=B8AA1CEFAF048F40A74B356AFAE6DBA1/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/RunConfigs/Config/=B8AA1CEFAF048F40A74B356AFAE6DBA1/DefaultAction/@EntryValue">run</s:String>
 	<s:String x:Key="/Default/RunConfigs/Config/=B8AA1CEFAF048F40A74B356AFAE6DBA1/Name/@EntryValue">TWC</s:String>
 	<s:String x:Key="/Default/RunConfigs/Config/=B8AA1CEFAF048F40A74B356AFAE6DBA1/ProjectGuid/@EntryValue">41A89FA4EF5A254AAB25521C95AB171C</s:String>
-	<s:String x:Key="/Default/RunConfigs/Config/=B8AA1CEFAF048F40A74B356AFAE6DBA1/Type/@EntryValue">project</s:String></wpf:ResourceDictionary>
+	<s:String x:Key="/Default/RunConfigs/Config/=B8AA1CEFAF048F40A74B356AFAE6DBA1/Type/@EntryValue">project</s:String>
+	<s:Boolean x:Key="/Default/RunConfigs/Config/=C6C00142606DA943AF8A265375115841/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/RunConfigs/Config/=C6C00142606DA943AF8A265375115841/Name/@EntryValue">asd</s:String>
+	<s:String x:Key="/Default/RunConfigs/Config/=C6C00142606DA943AF8A265375115841/Type/@EntryValue">exe</s:String>
+	<s:Boolean x:Key="/Default/RunConfigs/Config/=ED8E5D22D035E549A2265BB74FE6D2C3/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/RunConfigs/Config/=ED8E5D22D035E549A2265BB74FE6D2C3/DefaultAction/@EntryValue">run</s:String>
+	<s:String x:Key="/Default/RunConfigs/Config/=ED8E5D22D035E549A2265BB74FE6D2C3/Name/@EntryValue">TWC_TEST</s:String>
+	<s:String x:Key="/Default/RunConfigs/Config/=ED8E5D22D035E549A2265BB74FE6D2C3/ProjectGuid/@EntryValue">41A89FA4EF5A254AAB25521C95AB171C</s:String>
+	<s:String x:Key="/Default/RunConfigs/Config/=ED8E5D22D035E549A2265BB74FE6D2C3/Type/@EntryValue">project</s:String></wpf:ResourceDictionary>

@@ -1,0 +1,2 @@
+C:\Users\info\Desktop\deps\TWC\TWC\src\features\components\common\assets\png\background.gif|86429
+C:\Users\info\Desktop\deps\TWC\TWC\src\features\components\contact\assets\img\arrow.png|160
