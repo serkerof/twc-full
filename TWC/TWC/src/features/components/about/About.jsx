@@ -1,21 +1,20 @@
 /* eslint-disable no-unused-vars */
-// @ts-nocheck
-import React from 'react';
-import GalleryServices from './../../toolbox/gallery/GalleryServices';
-import Footer from './../../footer/Footer';
-import AboutHeaderDash from './AboutHeaderDash';
-import { useSelector } from 'react-redux';
-import { selectAllServices } from './../services/servicesSlice';
-import styles from './about.module.css';
+import React from "react";
+import GalleryServices from "./../../toolbox/gallery/GalleryServices";
+import Footer from "./../../footer/Footer";
+import AboutHeaderDash from "./AboutHeaderDash";
+import { useSelector } from "react-redux";
+import { selectAllServices } from "./../services/servicesSlice";
+import styles from "./about.module.css";
 // !----------------------------------------------------------
-import topicImage1 from './assets/img/about-us/topic-1.png';
-import topicImage2 from './assets/img/about-us/topic-2.png';
-import topicImage3 from './assets/img/about-us/topic-3.png';
-import topicImage4 from './assets/img/about-us/topic-4.png';
-import valuesImage1 from './assets/img/about-us/values-1.png';
-import valuesImage2 from './assets/img/about-us/values-2.png';
-import valuesImage3 from './assets/img/about-us/values-3.png';
-import aboutmain from './assets/img/aboutheader.png';
+import topicImage1 from "./assets/img/about-us/topic-1.png";
+import topicImage2 from "./assets/img/about-us/topic-2.png";
+import topicImage3 from "./assets/img/about-us/topic-3.png";
+import topicImage4 from "./assets/img/about-us/topic-4.png";
+import valuesImage1 from "./assets/img/about-us/values-1.png";
+import valuesImage2 from "./assets/img/about-us/values-2.png";
+import valuesImage3 from "./assets/img/about-us/values-3.png";
+import aboutmain from "./assets/img/aboutheader.png";
 
 const About = () => {
     const allServices = useSelector(selectAllServices);
@@ -25,8 +24,8 @@ const About = () => {
             <AboutHeaderDash
                 isBlack={true}
                 img={aboutmain}
-                textStructure={'Biznes planlarınız və strategiyalarınız üçün ekspert məsləhətləri'}
-                textStructureData={'Expert advice for your business plans and strategies'} />
+                textStructure={"Biznes planlarınız və strategiyalarınız üçün ekspert məsləhətləri"}
+                textStructureData={"Expert advice for your business plans and strategies"} />
             <section className={`${styles.services_header} d-flex direction-column justify-center align-center`}>
                 <span className={`${styles.service_sub_title}`}>ProfESSİONAL KOMANDAMIZLA</span>
                 <span className={`${styles.service_title}`}>Konsaltinq Servislərimiz</span>
@@ -52,7 +51,8 @@ const About = () => {
                     <div className={`${styles.paragraph_section} d-flex direction-column justify-center`}>
                         <span className={`${styles.sub_header}`}>Haqqımızda</span>
                         <p className={`${styles.topic_desc}`}>
-                            TWC cəmiyyətin və bizneslərin <br /> ən əhəmiyyətli problemlərini həll etmək üçün kreativliyin <br />{' '
+                            TWC cəmiyyətin və bizneslərin <br /> ən əhəmiyyətli problemlərini həll etmək üçün kreativliyin <br />{
+                                " "
                             }
                             sərhədlərinin olmadığı yerdir
                         </p>
@@ -78,7 +78,8 @@ const About = () => {
                     <div className={`${styles.paragraph_section} d-flex direction-column justify-center`}>
                         <span className={`${styles.sub_header}`}>Haqqımızda</span>
                         <p className={`${styles.topic_desc}`}>
-                            Bugün biz ən böyük oyunçulara <br /> sənayeni müəyyən edən <br /> problemləri həll etməkdə və <br />{' '}
+                            Bugün biz ən böyük oyunçulara <br /> sənayeni müəyyən edən <br /> problemləri həll etməkdə və <br />{
+                                " "}
                             davamlı biznes dəyəri <br /> yaratmaqda kömək edirik.
                         </p>
                     </div>

@@ -15,13 +15,24 @@ namespace TWC_BACK_END.Controllers
             _adminService = adminService;
         }
 
-        [HttpGet("admingetall")]
-        public IActionResult GetAll()
+        [HttpPost("addadmin")]
+        public IActionResult AddAdmin(Admin admin)
         {
-            var result = _adminService.GetList();
+            var result = _adminService.Add(admin);
             if (result.Success)
             {
-                return Ok(result.Data);
+                return Ok(result.Message);
+            }
+            return BadRequest(result.Message);
+        }
+
+        [HttpDelete("deleteadmin")]
+        public IActionResult DeleteAdmin(Admin admin)
+        {
+            var result = _adminService.Delete(admin);
+            if (result.Success)
+            {
+                return Ok(result.Message);
             }
             return BadRequest(result.Message);
         }
@@ -37,13 +48,13 @@ namespace TWC_BACK_END.Controllers
             return BadRequest(result.Message);
         }
 
-        [HttpPost("addadmin")]
-        public IActionResult AddAdmin(Admin admin)
+        [HttpGet("admingetall")]
+        public IActionResult GetAll()
         {
-            var result = _adminService.Add(admin);
+            var result = _adminService.GetList();
             if (result.Success)
             {
-                return Ok(result.Message);
+                return Ok(result.Data);
             }
             return BadRequest(result.Message);
         }
@@ -52,17 +63,6 @@ namespace TWC_BACK_END.Controllers
         public IActionResult UpdateAdmin(Admin admin)
         {
             var result = _adminService.Update(admin);
-            if (result.Success)
-            {
-                return Ok(result.Message);
-            }
-            return BadRequest(result.Message);
-        }
-
-        [HttpDelete("deleteadmin")]
-        public IActionResult DeleteAdmin(Admin admin)
-        {
-            var result = _adminService.Delete(admin);
             if (result.Success)
             {
                 return Ok(result.Message);

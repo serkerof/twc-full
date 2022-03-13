@@ -7,17 +7,17 @@ import team_mem4 from './../home/assets/img/team-aynure.png';
 import team_mem5 from './../home/assets/img/team-question.png';
 import team_mem6 from './../home/assets/img/team-mehemmed.png';
 
-const aboutAdapter = createEntityAdapter({
-    selectId: (teamMember) => teamMember.id,
-    sortComparer: (preMember, nextMember) => preMember.id.localeComparer(nextMember.id)
-})
+const aboutAdapter = createEntityAdapter( {
+    selectId: ( teamMember ) => teamMember.id,
+    sortComparer: ( preMember, nextMember ) => preMember.id.localeComparer( nextMember.id )
+} )
 
 const initialState = {
     error: null,
     status: 'idle',
     selectedMember: {},
     members: {
-        ids: ["id1", "id2", "id3", "id4", "id5", "id6"],
+        ids: [ "id1", "id2", "id3", "id4", "id5", "id6" ],
         entities: {
             id1: {
                 id: "id1",
@@ -65,59 +65,139 @@ const initialState = {
     }
 }
 
-export const fetchMembers = createAsyncThunk('about/fetchMembers', async () => {
-    let request = await fetch('/api/employeesgetall');
-    return await request.json();
-})
+export const fetchMembers = createAsyncThunk( 'about/fetchMembers', async () =>
+{
 
-export const addMember = createAsyncThunk('about/addMember', async (member) => {
-    let request = await fetch('/api/employeesadd', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(member)
-    });
-    return await request.json();
-})
+    try
+    {
+        let request = await fetch( '/api/employeesgetall' );
+        return await request.json();
+    } catch ( error )
+    {
+        return error
+    }
 
-const sliceInvoker = () => {
+} )
+
+
+export const fetchMemberById = createAsyncThunk( 'about/fetchMemberById', async ( id ) =>
+{
+    try
+    {
+        let request = await fetch( '/api/employeesgetone?id=' + id );
+        return await request.json();
+    } catch ( error )
+    {
+        return error
+    }
+} )
+
+export const addMember = createAsyncThunk( 'about/addMember', async ( member ) =>
+{
+    try
+    {
+        let request = await fetch( '/api/employeesadd', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify( member )
+        } );
+        return await request.json();
+    } catch ( error )
+    {
+        return error
+    }
+
+} )
+
+
+export const updateMember = createAsyncThunk( 'about/updateMember', async ( member ) =>
+{
+    try
+    {
+        let request = await fetch( '/api/employeesupdate' + `/${ member.id }`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify( member )
+        } );
+        return await request.json();
+    } catch ( error )
+    {
+        return error
+    }
+} )
+
+export const deleteMember = createAsyncThunk( 'about/deleteMember', async ( id ) =>
+{
+    try
+    {
+        let request = await fetch( '/api/employeesdelete' + `/${ id }` );
+        return await request.json();
+    } catch ( error )
+    {
+        return error
+    }
+} )
+
+
+
+const sliceInvoker = () =>
+{
     return {
         name: 'about',
         initialState,
         reducers: {},
         extraReducers: {
-            [fetchMembers.fulfilled]: (state, action) => {
+            [ fetchMembers.fulfilled ]: ( state, action ) =>
+            {
                 state.status = 'succeeded';
-                aboutAdapter.setAll(state, action.payload);
+                aboutAdapter.setAll( state, action.payload );
             },
-            [fetchMembers.rejected]: (state, action) => {
+            [ fetchMembers.rejected ]: ( state, action ) =>
+            {
                 state.error = action.payload.error.message;
                 state.status = 'failed';
             },
-            [fetchMembers.pending]: (state, action) => {
+            [ fetchMembers.pending ]: ( state, action ) =>
+            {
                 state.status = 'loading'
             },
-            [addMember.fulfilled]: (state, action) => {
+            [ fetchMemberById.fulfilled ]: ( state, action ) =>{
                 state.status = 'succeeded';
-                aboutAdapter.addOne(state, action.payload)
+                state.selectedMember = action.payload;
             },
-            [addMember.rejected]: (state, action) => {
+
+            [ addMember.fulfilled ]: ( state, action ) =>
+            {
+                state.status = 'succeeded';
+                aboutAdapter.addOne( state, action.payload )
+            },
+            [ addMember.rejected ]: ( state, action ) =>
+            {
                 state.status = 'failed';
                 state.error = action.payload.error.message
             },
-            [addMember.pending]: (state, action) => {
+            [ addMember.pending ]: ( state, action ) =>
+            {
                 state.status = 'loading'
             }
         }
     }
 }
 
-const aboutSlice = createSlice(sliceInvoker());
+const aboutSlice = createSlice( sliceInvoker() );
 
 export const {
     selectAll: selectAllMembers,
     selectById: selectMemberById,
-    selectIds: selectMemberIds
-} = aboutAdapter.getSelectors(state => state.about.members)
+    selectIds: selectMemberIds,
+    selectEntities: selectMemberEntities,
+    selectTotal: selectMemberTotal,
+
+} = aboutAdapter.getSelectors( state => state.about.members )
+
+
 export default aboutSlice.reducer
